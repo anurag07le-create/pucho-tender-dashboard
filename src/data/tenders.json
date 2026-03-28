@@ -1,0 +1,1229 @@
+[
+  {
+    "id": "288545",
+    "name": "",
+    "organisation": "Gujarat State Electricity Corporation Limited",
+    "estimatedCost": "",
+    "department": "Energy And Petrochemicals Department",
+    "subDepartment": "Wanakbori Thermal Power Station",
+    "submissionDate": "16-04-2026 18:00",
+    "downloadableDocuments": [
+      {
+        "name": "RFQ NO-74894 EEEC.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=640dff28-bcf7-4be1-b0a9-0c8509c42f05&name=RFQ%20NO-74894%20EEEC.pdf"
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "name": "Attach Scanned copy of Tender fee and EMD details.",
+        "link": null
+      },
+      {
+        "name": "Experience certificate of similar work & copy of past orders executed for similar type of work.(as mentioned in tender document)",
+        "link": null
+      },
+      {
+        "name": "Must be submit financial qualification criteria (As mentioned in tender document).",
+        "link": null
+      },
+      {
+        "name": "Details of PF Code No.",
+        "link": null
+      },
+      {
+        "name": "Copy of GST Registration No., I.T. No. & PAN Card No.",
+        "link": null
+      },
+      {
+        "name": "List of tools & tackles (as mentioned in tender document)",
+        "link": null
+      },
+      {
+        "name": "Attach scanned copy of technical bid with all relevants documents.",
+        "link": null
+      },
+      {
+        "name": "Authentication of veracity of documents submitted in support of Meeting the Qualifying Requirements. (As mentioned in tender document).",
+        "link": null
+      },
+      {
+        "name": "Form for Declaration for Conflict of Interest among BIDDERS/AGENTS. (As mentioned in tender document).",
+        "link": null
+      },
+      {
+        "name": "Form for Declaration for Relationship of BIDDER With Employee (As mentioned in tender document).",
+        "link": null
+      },
+      {
+        "name": "Bidder must be registered in GUVNL VMS portal. (As mentioned in tender document).",
+        "link": null
+      },
+      {
+        "name": "Bidder must be submit form no.1 to 6 including integrity pact with duly sign & stamp.",
+        "link": null
+      },
+      {
+        "name": "Attach scan copy of Tender documents",
+        "link": null
+      }
+    ],
+    "rawData": {
+      "3": "Price Bid Form",
+      "3252": "Technical Bid",
+      "5173": "Tender fee details –WTPS",
+      "41260": "EMD DETAIL",
+      "Organization Name": "Gujarat State Electricity Corporation Limited",
+      "Location": "Kheda",
+      "Department": "Energy And Petrochemicals Department",
+      "Sub Department": "Wanakbori Thermal Power Station",
+      "IFB/Tender Notice No": "WTPS/W/ET/01/2026-14 for WORKS RFQ NO-74894",
+      "Tender Type": "Open",
+      "Tender title/Name Of Project": "Wanakbori Thermal Power Station",
+      "Description of Material/Name of Work": "Work of conducting Oxygen Mapping and flow measurement at various locations of Wanakbori Thermal Power Station",
+      "Sector Category": "Power and Energy",
+      "Form of Contract": "Works",
+      "Product Category": "Miscellaneous Works",
+      "Tender Category": "WORKS",
+      "Tender Currency Type": "Single",
+      "Tender Currency Setting": "Indian Rupee",
+      "Period of Completion/Delivery Period": "As per tender Document Attached",
+      "Procurement Type": "Works",
+      "Consortium / Joint Venture": "N/A",
+      "Rebate": "N/A",
+      "Alternate decrypter": "N/A",
+      "Bid Document Download Start Date": "26-03-2026 16:00",
+      "Bid document download End Date": "16-04-2026 18:00",
+      "Bid Submission Start Date": "26-03-2026 16:00",
+      "Bid Submission Closing Date": "16-04-2026 18:00",
+      "Tender NIT View Date": "N/A",
+      "Remarks": "1.Bidders are requested to submit Technical & Price Bid through ONLINE (n-Procure) only.2.For EMD amount up to Rs.3 lahks, no any physical documents with bids will be required from bidders.2a.All the bidders will be required to pay tender fees plus applicable GST and EMD as mentioned in the tender documents either in cash (up to 10,000.00 only) at the office address specified in the tender documents or by RTGS/NEFT/online only.2b.Bidder must have to provide details of TF/EMD and attach scan copy of RTGS/ NEFT / online / cash receipt in n-procure for reference.3.Offline OR Hard copy will not be accepted, failing which the offer will be ignored out rightly.",
+      "Pre-Bid Meeting": "No Meeting",
+      "Bid validity": "180\n\t\t\t\t\t\t\t\t\t\t  Days",
+      "Bidding Processing Fee  ( OFFLINE)": "1,770        \n\t\t\t\t\t\t\t\t\t\t\t\tINR. (One thousand Seven hundred Seventy )",
+      "Bidding Processing Fee Payable to": "GUJARAT STATE ELECTRICITY CORP. LTD. [RTGS/NEFT/online PAYABLE AT BANK OF BARODA WTPS BRANCH]",
+      "Bidding Processing Fee Payable at": "GSECL , WTPS",
+      "Bid Security/EMD/Proposal Security INR (\n\t\t\t\t\t\t\t\t\t\t\tOFFLINE)": "22,164\n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Twenty Two Thousand One hundred Sixty Four )",
+      "Bid Security/EMD/Proposal Security INR Payable to": "GUJARAT STATE ELECTRICITY CORP. LTD. [RTGS/NEFT/online PAYABLE AT BANK OF BARODA WTPS BRANCH]",
+      "Bid Security/EMD/Proposal Security INR Payable at": "GSECL , WTPS",
+      "Officer Inviting Bids": "Chief Engineer [C & O], Wanakbori TPS",
+      "Bid Opening Authority": "Chief Engineer [C & O], Wanakbori TPS",
+      "Address": "Wanakbori Thermal Power Station, Gujarat State Electricity Corporation Limited, Ta: Galteshwar, Dist: Kheda -388239",
+      "Contact Details": "wtps.se-tech@gebmail.com /7069003830",
+      "Preliminary stage": "17-04-2026 15:00",
+      "Technical Stage": "17-04-2026 15:30",
+      "Commercial Stage": "",
+      "Cert Serial No.": "624c04ff",
+      "Subject Dn": "CN=MAHENDRA BALUBHAI PATEL, SERIALNUMBER=09f40c08e6a2e7e6cdd9811874aaa774200be15cb07ca225c4f52d7139e5d592, ST=Gujarat, OID.2.5.4.17=388239, OU=\"SUPERINTENDING ENGINEER,CID - 7068823\", OID.2.5.4.20=a5be1d99b2a920067eac8f798e0e5682d56b0f1e25d53c6c02070aa02629e84a, O=WTPS GSECL, C=IN",
+      "Cert Issuer": "CN=(n)Code Solutions Sub-CA for DSC 2022, OU=Sub-CA, O=Gujarat Narmada Valley Fertilizers and Chemicals Limited, C=IN",
+      "Thumbprint": "e9 39 3e 4b cb 2a 18 70 6c 16 c8 7c ef aa 03 54 39 61 ba f4"
+    }
+  },
+  {
+    "id": "290464",
+    "name": "",
+    "organisation": "Narmada Water Resources",
+    "estimatedCost": "2308802.37 INR.  (Twenty Three Lacs Zero Eight Thousand Eight hundred Two Point Three  Seven Only)",
+    "department": "Narmada and Water Resources, Water Supply and Kalpsar Department",
+    "subDepartment": "Drainage Div No 2 Surat",
+    "submissionDate": "09-04-2026 18:00",
+    "downloadableDocuments": [
+      {
+        "name": "02-01 SBD.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=1ff36037-dba0-4576-a1fe-6551bc5d4776&name=02-01%20SBD.pdf"
+      },
+      {
+        "name": "02-02 Schedule B.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=57917989-456e-4026-aa1f-a77192682145&name=02-02%20Schedule%20B.pdf"
+      },
+      {
+        "name": "02-03 Technical Specification.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=dbe0a406-60bf-46d7-a6c5-dea90e022556&name=02-03%20Technical%20Specification.pdf"
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "name": "Tender Fee",
+        "link": null
+      },
+      {
+        "name": "Tender EMD / EMD Exemption Certificate",
+        "link": null
+      },
+      {
+        "name": "Pan Card Issued by Income Tax Department",
+        "link": null
+      },
+      {
+        "name": "Registration Certificate of appropriate class of contractor",
+        "link": null
+      },
+      {
+        "name": "GST Registration",
+        "link": null
+      },
+      {
+        "name": "Undertaking by the Agency that he has access to, or has available, liquid assets (aggregate of working capital, cash in hand and uncommitted bank guarantees) and / or Bank Certificate for Evidence of Access to or Availability of Credit Facilities, as per Section 4.5.6 of SBD Book (Amount As per Appendix to ITB, point no.8 and in the form prescribed in Section-2 of SBD Book)",
+        "link": null
+      },
+      {
+        "name": "Affidavit (as per Section 2 of SBD Book)",
+        "link": null
+      },
+      {
+        "name": "Litigation History as per Section-1 Clause 4.5.8 and in the form prescribed in section-2 of SBD Book",
+        "link": null
+      },
+      {
+        "name": "Form of Bid (as per Section-6 of SBD Book)",
+        "link": null
+      },
+      {
+        "name": "Partnership Deed (If Any)",
+        "link": null
+      },
+      {
+        "name": "Power of Attorney of the signatory of bid (If Any)",
+        "link": null
+      },
+      {
+        "name": "Bid Capacity : It is Mandatory to provide information for assessment of bid capacity as per Section-1 point 4.7. It is to be provided in the form prescribed in Section-2, point 1.2 and 1.4 Also provide calculated / derived value of your Bid capacity as per given formula and attach the Calculation sheet for the same. Necessary Certificates showing year wise breakup of work done amount, issued by concerned Engineer-In-Charge, are required to be attached.",
+        "link": null
+      }
+    ],
+    "rawData": {
+      "4": "Percentage Rate",
+      "5": "Tender Fee Form",
+      "6": "Emd Fee Form",
+      "Organization Name": "Narmada Water Resources",
+      "Location": "Surat",
+      "Department": "Narmada and Water Resources, Water Supply and Kalpsar Department",
+      "Sub Department": "Drainage Div No 2 Surat",
+      "IFB/Tender Notice No": "36 of 2025-26",
+      "Tender Type": "Open",
+      "Tender title/Name Of Project": "Renovation of H.P. Culvert/Slab Culvert in to R.C.C. Box Culvert at Ch.1660 Mtr on Village Drain at Village- Nandpor Taluka-Mandvi Dist.Surat.",
+      "Description of Material/Name of Work": "Renovation of H.P. Culvert/Slab Culvert in to R.C.C. Box Culvert at Ch.1660 Mtr on Village Drain at Village- Nandpor Taluka-Mandvi Dist.Surat.",
+      "Sector Category": "State Governments & UT",
+      "Form of Contract": "Works",
+      "Product Category": "Civil - All",
+      "Tender Category": "WORKS",
+      "Estimated Cost Value": "2308802.37 INR.  (Twenty Three Lacs Zero Eight Thousand Eight hundred Two Point Three  Seven Only)",
+      "Is ECV Visible to Supplier?": "Yes",
+      "Tender Currency Type": "Single",
+      "Tender Currency Setting": "Indian Rupee",
+      "Period of Completion/Delivery Period": "6  Months",
+      "Procurement Type": "Works",
+      "Consortium / Joint Venture": "N/A",
+      "Rebate": "N/A",
+      "Alternate decrypter": "N/A",
+      "Bid Document Download Start Date": "26-03-2026 19:45",
+      "Bid document download End Date": "09-04-2026 18:00",
+      "Bid Submission Start Date": "26-03-2026 19:45",
+      "Bid Submission Closing Date": "09-04-2026 18:00",
+      "Tender NIT View Date": "N/A",
+      "Remarks": "Demand Draft for E.M.D. & tender fee shall be submitted in electronic format only through online (by scanning) while uploading the bid. This submission shall mean that E.M.D. & tender fee are received for purpose of opening the bid. Accordingly offer of those shall be opened whose E.M.D. & tender fee is received electronically. However for the purpose of realization of D.D., bidder shall send the D.D. in original through R.P.A.D/Speed Post. So as to reach to R.P.A.D. /Speed Post so as to reach to Executive Engineer, Drainage Division No.2, Sinchai Bhavan, 3rd. Floor, Nr. Lourdes convent Bus stop, Athwalines, Surat-395007 up to Dt. 09/04/2026 to 18/04/2026 Hour 18:00.\nRegistration Certificate of Approved Class \"E-1\" or above with GUJARAT State Govt. Departments.",
+      "Pre-Bid Meeting": "No Meeting",
+      "Bid validity": "120\n\t\t\t\t\t\t\t\t\t\t  Days",
+      "Bidding Processing Fee  ( OFFLINE)": "900        \n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Nine hundred )",
+      "Bidding Processing Fee Payable to": "Executive Engineer, Drainage Division No.2, Surat.",
+      "Bidding Processing Fee Payable at": "Surat",
+      "Bid Security/EMD/Proposal Security INR (\n\t\t\t\t\t\t\t\t\t\t\tOFFLINE)": "23,100\n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Twenty Three Thousand One hundred )",
+      "Bid Security/EMD/Proposal Security INR Payable to": "Executive Engineer, Drainage Division No.2, Surat.",
+      "Bid Security/EMD/Proposal Security INR Payable at": "Surat",
+      "Exempted Fee": "Yes",
+      "Minimum FDR": "23,100 INR.",
+      "Maximum FDR": "23,100 INR.",
+      "Officer Inviting Bids": "Executive Engineer, Drainage Division No.2, Surat.",
+      "Bid Opening Authority": "Executive Engineer, Drainage Division No.2, Surat.",
+      "Address": "Sinchai Bhavan, 3rd. Floor, Nr. Lourdes convent Bus stop, Athwalines, Surat-395007.",
+      "Contact Details": "02612669596",
+      "Prelimanary Stage": "10-04-2026 12:00",
+      "commercial  stage": "10-04-2026 12:05",
+      "Cert Serial No.": "624c4149",
+      "Subject Dn": "'CN=SANJAY KHANDUBHAI GARASIA, SERIALNUMBER=d710f618c0ec2f64fd353dfc077788fc12371b74dae18604d6c3762d879850fe, ST=Gujarat, OID.2.5.4.17=395007, OU=\"Executive Engineer Drainage Division No 2 Surat,CID - 7080116\", OID.2.5.4.20=2f3593503be59d39becb41733a3fca2271d8ee8c64826e5ac7813fad1ae80875, O=Executive Engineer Drainage Division No 2 Surat, C=IN'",
+      "Cert Issuer": "CN=(n)Code Solutions Sub-CA for DSC 2022, OU=Sub-CA, O=Gujarat Narmada Valley Fertilizers and Chemicals Limited, C=IN",
+      "Thumbprint": "1d 4d 6e 28 7f e1 5e 39 bf e3 d3 ef 33 6d 11 a9 80 a4 b3 32"
+    }
+  },
+  {
+    "id": "290461",
+    "name": "",
+    "organisation": "Narmada Water Resources",
+    "estimatedCost": "4633549.47 INR.  (Forty Six Lacs Thirty Three Thousand Five hundred Forty Nine Point Four  Seven Only)",
+    "department": "Narmada and Water Resources, Water Supply and Kalpsar Department",
+    "subDepartment": "Drainage Div No 2 Surat",
+    "submissionDate": "09-04-2026 18:00",
+    "downloadableDocuments": [
+      {
+        "name": "01-01 SBD.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=b65e53b5-2f7a-4e85-8390-5f36780267c8&name=01-01%20SBD.pdf"
+      },
+      {
+        "name": "01-02 Schedule B.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=e67a6b8e-19b4-4c8b-8826-fcadd0039237&name=01-02%20Schedule%20B.pdf"
+      },
+      {
+        "name": "01-03-Technical Specification.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=4ae9ba2f-bf1a-4812-bac8-b17283102381&name=01-03-Technical%20Specification.pdf"
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "name": "Tender Fee",
+        "link": null
+      },
+      {
+        "name": "Tender EMD / EMD Exemption Certificate",
+        "link": null
+      },
+      {
+        "name": "Pan Card Issued by Income Tax Department",
+        "link": null
+      },
+      {
+        "name": "Registration Certificate of appropriate class of contractor",
+        "link": null
+      },
+      {
+        "name": "GST Registration",
+        "link": null
+      },
+      {
+        "name": "Undertaking by the Agency that he has access to, or has available, liquid assets (aggregate of working capital, cash in hand and uncommitted bank guarantees) and / or Bank Certificate for Evidence of Access to or Availability of Credit Facilities, as per Section 4.5.6 of SBD Book (Amount As per Appendix to ITB, point no.8 and in the form prescribed in Section-2 of SBD Book)",
+        "link": null
+      },
+      {
+        "name": "Affidavit (as per Section 2 of SBD Book)",
+        "link": null
+      },
+      {
+        "name": "Litigation History as per Section-1 Clause 4.5.8 and in the form prescribed in section-2 of SBD Book",
+        "link": null
+      },
+      {
+        "name": "Form of Bid (as per Section-6 of SBD Book)",
+        "link": null
+      },
+      {
+        "name": "Partnership Deed (If Any)",
+        "link": null
+      },
+      {
+        "name": "Power of Attorney of the signatory of bid (If Any)",
+        "link": null
+      },
+      {
+        "name": "Bid Capacity : It is Mandatory to provide information for assessment of bid capacity as per Section-1 point 4.7. It is to be provided in the form prescribed in Section-2, point 1.2 and 1.4 Also provide calculated / derived value of your Bid capacity as per given formula and attach the Calculation sheet for the same. Necessary Certificates showing year wise breakup of work done amount, issued by concerned Engineer-In-Charge, are required to be attached.",
+        "link": null
+      }
+    ],
+    "rawData": {
+      "4": "Percentage Rate",
+      "5": "Tender Fee Form",
+      "6": "Emd Fee Form",
+      "Organization Name": "Narmada Water Resources",
+      "Location": "Surat",
+      "Department": "Narmada and Water Resources, Water Supply and Kalpsar Department",
+      "Sub Department": "Drainage Div No 2 Surat",
+      "IFB/Tender Notice No": "36 of 2025-26",
+      "Tender Type": "Open",
+      "Tender title/Name Of Project": "Renovation of H.P. Culvert / Slab Culvert in to R.C.C. Box Culvert at Ch.500 mt. and Ch.1200 mt. on Sub Drain No.S.6/7 at Village : Karavali, Ta.:- Areth Dist.:- Surat.",
+      "Description of Material/Name of Work": "Renovation of H.P. Culvert / Slab Culvert in to R.C.C. Box Culvert at Ch.500 mt. and Ch.1200 mt. on Sub Drain No.S.6/7 at Village : Karavali, Ta.:- Areth Dist.:- Surat.",
+      "Sector Category": "State Governments & UT",
+      "Form of Contract": "Works",
+      "Product Category": "Civil - All",
+      "Tender Category": "WORKS",
+      "Estimated Cost Value": "4633549.47 INR.  (Forty Six Lacs Thirty Three Thousand Five hundred Forty Nine Point Four  Seven Only)",
+      "Is ECV Visible to Supplier?": "Yes",
+      "Tender Currency Type": "Single",
+      "Tender Currency Setting": "Indian Rupee",
+      "Period of Completion/Delivery Period": "6  Months",
+      "Procurement Type": "Works",
+      "Consortium / Joint Venture": "N/A",
+      "Rebate": "N/A",
+      "Alternate decrypter": "N/A",
+      "Bid Document Download Start Date": "26-03-2026 19:45",
+      "Bid document download End Date": "09-04-2026 18:00",
+      "Bid Submission Start Date": "26-03-2026 19:45",
+      "Bid Submission Closing Date": "09-04-2026 18:00",
+      "Tender NIT View Date": "N/A",
+      "Remarks": "Demand Draft for E.M.D. & tender fee shall be submitted in electronic format only through online (by scanning) while uploading the bid. This submission shall mean that E.M.D. & tender fee are received for purpose of opening the bid. Accordingly offer of those shall be opened whose E.M.D. & tender fee is received electronically. However for the purpose of realization of D.D., bidder shall send the D.D. in original through R.P.A.D/Speed Post. So as to reach to R.P.A.D. /Speed Post so as to reach to Executive Engineer, Drainage Division No.2, Sinchai Bhavan, 3rd. Floor, Nr. Lourdes convent Bus stop, Athwalines, Surat-395007 up to Dt. 09/04/2026 to 18/04/2026 Hour 18:00.\nRegistration Certificate of Approved Class \"E-1\" or above with GUJARAT State Govt. Departments.",
+      "Pre-Bid Meeting": "No Meeting",
+      "Bid validity": "120\n\t\t\t\t\t\t\t\t\t\t  Days",
+      "Bidding Processing Fee  ( OFFLINE)": "1,500        \n\t\t\t\t\t\t\t\t\t\t\t\tINR. (One thousand Five hundred )",
+      "Bidding Processing Fee Payable to": "Executive Engineer, Drainage Division No.2, Surat.",
+      "Bidding Processing Fee Payable at": "Surat",
+      "Bid Security/EMD/Proposal Security INR (\n\t\t\t\t\t\t\t\t\t\t\tOFFLINE)": "46,500\n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Forty Six Thousand Five hundred )",
+      "Bid Security/EMD/Proposal Security INR Payable to": "Executive Engineer, Drainage Division No.2, Surat.",
+      "Bid Security/EMD/Proposal Security INR Payable at": "Surat",
+      "Exempted Fee": "Yes",
+      "Minimum FDR": "46,500 INR.",
+      "Maximum FDR": "46,500 INR.",
+      "Officer Inviting Bids": "Executive Engineer, Drainage Division No.2, Surat.",
+      "Bid Opening Authority": "Executive Engineer, Drainage Division No.2, Surat.",
+      "Address": "Sinchai Bhavan, 3rd. Floor, Nr. Lourdes convent Bus stop, Athwalines, Surat-395007.",
+      "Contact Details": "02612669596",
+      "Prelimanary Stage": "10-04-2026 12:00",
+      "commercial  stage": "10-04-2026 12:05",
+      "Cert Serial No.": "624c4149",
+      "Subject Dn": "'CN=SANJAY KHANDUBHAI GARASIA, SERIALNUMBER=d710f618c0ec2f64fd353dfc077788fc12371b74dae18604d6c3762d879850fe, ST=Gujarat, OID.2.5.4.17=395007, OU=\"Executive Engineer Drainage Division No 2 Surat,CID - 7080116\", OID.2.5.4.20=2f3593503be59d39becb41733a3fca2271d8ee8c64826e5ac7813fad1ae80875, O=Executive Engineer Drainage Division No 2 Surat, C=IN'",
+      "Cert Issuer": "CN=(n)Code Solutions Sub-CA for DSC 2022, OU=Sub-CA, O=Gujarat Narmada Valley Fertilizers and Chemicals Limited, C=IN",
+      "Thumbprint": "1d 4d 6e 28 7f e1 5e 39 bf e3 d3 ef 33 6d 11 a9 80 a4 b3 32"
+    }
+  },
+  {
+    "id": "290458",
+    "name": "",
+    "organisation": "Roads and Buildings",
+    "estimatedCost": "0.00 INR.  ()",
+    "department": "Roads and Buildings",
+    "subDepartment": "Godhra Division",
+    "submissionDate": "07-04-2026 18:00",
+    "downloadableDocuments": [
+      {
+        "name": "SHAHERA BYPASS - DPR-LAQ-FOREST WITHOUT JV.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=0acbada2-bd3d-40ef-b01f-d6faffc9e031&name=SHAHERA%20BYPASS%20-%20DPR-LAQ-FOREST%20WITHOUT%20JV.pdf"
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "name": "Tender Fee and EMD",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of Bid Processing Fee",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of EMD Document",
+        "link": null
+      },
+      {
+        "name": "BOQ",
+        "link": null
+      }
+    ],
+    "rawData": {
+      "5": "Tender Fee Form",
+      "6": "Emd Fee Form",
+      "40591": "Summary of Cost in Local Currency",
+      "40596": "Estimate of Local Currency Costs (Professional Staff)",
+      "40599": "Estimate of Local Currency Costs (Professional Staff)",
+      "40600": "Estimate of Local Currency Costs (Professional Staff)",
+      "40601": "Transportation (Fixed costs)",
+      "40602": "Office Rent (Fixed Costs)",
+      "40603": "Duty Travel to Site (Fixed Costs)",
+      "40604": "Office Supplies, Utilities and Communication (Fixed Costs)",
+      "40605": "Office Furniture and Equipment (Rental)",
+      "40606": "Reports and Document Printing",
+      "40607": "Topographical Survey (Fixed Rate)",
+      "40608": "Investigation (Fixed Cost)",
+      "40609": "Net Work Survey and GPR",
+      "40610": "Cost of supply and fixing Boundary Pillars",
+      "40611": "Land Acquisition Team including support staff and logistics/ transportation",
+      "40612": "Logistics for Land acquisition Team",
+      "40613": "Estimate of Costs for Expatriate Consultants",
+      "40614": "Mobilization and Demobilization",
+      "Organization Name": "Roads and Buildings",
+      "Location": "Panchmahal",
+      "Department": "Roads and Buildings",
+      "Sub Department": "Godhra Division",
+      "IFB/Tender Notice No": "39 OF 2025 - 26 (RE-INVITE)",
+      "Tender Type": "Open",
+      "Tender title/Name Of Project": "CONSULTANCY",
+      "Description of Material/Name of Work": "Consultancy Services for DPR preparation, land acquisition, utility shifting work for bypass road of Shahera, Dist. Panchamahal.",
+      "Sector Category": "Civil Supplies / Public Distribution System",
+      "Form of Contract": "Works",
+      "Product Category": "Civil Works - Roads",
+      "Tender Category": "WORKS",
+      "Estimated Cost Value": "0.00 INR.  ()",
+      "Is ECV Visible to Supplier?": "Yes",
+      "Tender Currency Type": "Single",
+      "Tender Currency Setting": "Indian Rupee",
+      "Period of Completion/Delivery Period": "09  Months",
+      "Procurement Type": "Works",
+      "Consortium / Joint Venture": "N/A",
+      "Rebate": "Applicable",
+      "Alternate decrypter": "N/A",
+      "Bid Document Download Start Date": "26-03-2026 19:00",
+      "Bid document download End Date": "07-04-2026 12:00",
+      "Bid Submission Start Date": "26-03-2026 19:00",
+      "Bid Submission Closing Date": "07-04-2026 18:00",
+      "Tender NIT View Date": "26-03-2026 19:00",
+      "Remarks": "Contractor should submit the D.D. of Tender fee & EMD in physical at the time of tender opening or send the same through form by RPAD / Speed post so as to reach to the Executive Engineer, Godhra (R&B) Division, Godhra in seal cover duly subscribing the name of work on or before Dt.7.4.26 to 13.4.26 during office hours.",
+      "Pre-Bid Meeting": "No Meeting",
+      "Bid validity": "120\n\t\t\t\t\t\t\t\t\t\t  Days",
+      "Bidding Processing Fee  ( OFFLINE)": "3,600        \n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Three thousand Six hundred )",
+      "Bidding Processing Fee Payable to": "EXECUTIVE ENGINEER, R & B DIVISION, GODHRA",
+      "Bidding Processing Fee Payable at": "GODHRA",
+      "Bid Security/EMD/Proposal Security INR (\n\t\t\t\t\t\t\t\t\t\t\tOFFLINE)": "125,000\n\t\t\t\t\t\t\t\t\t\t\t\tINR. (One lac Twenty Five Thousand  )",
+      "Bid Security/EMD/Proposal Security INR Payable to": "EXECUTIVE ENGINEER, R & B DIVISION, GODHRA",
+      "Bid Security/EMD/Proposal Security INR Payable at": "GODHRA",
+      "Exempted Fee": "No",
+      "Minimum FDR": "125,000 INR.",
+      "Maximum FDR": "125,000 INR.",
+      "Officer Inviting Bids": "Executive Engineer, R & B Division, Godhra",
+      "Bid Opening Authority": "Executive Engineer, R & B Division, Godhra",
+      "Address": "B/H. Blood Bank Society, Civil Lines Road, Godhra",
+      "Contact Details": "rnb_pan@yahoo.in",
+      "PRILIMINARY STAGE": "08-04-2026 12:05",
+      "COMMERCIAL STAGE": "08-04-2026 12:10",
+      "Cert Serial No.": "6eb95eb0",
+      "Subject Dn": "CN=PIYUSHKUMAR RATILAL CHAUDHARI, SERIALNUMBER=2560BC1994A7BB21942EC96DF6D3E9EFC8AD298FB6E139029F0091B0EB9C77A2, ST=GUJARAT, OID.2.5.4.17=389001, OID.2.5.4.20=8a6e8fd18b87c898fad0415c971bd8ed4f22d58e2d1cf0815f2bd836ec8cae23, OU=GOVERNMENT, O=EX.ENGINEER R AND B DIVISION GODHARA, C=IN",
+      "Cert Issuer": "CN=SafeScrypt sub-CA for Class 3 Organization 2022, OU=Sub-CA, O=Sify Technologies Limited, C=IN",
+      "Thumbprint": "aa d6 64 02 f7 55 e6 90 09 58 07 bd 9f d0 83 37 cb 11 ef ba"
+    }
+  },
+  {
+    "id": "290455",
+    "name": "",
+    "organisation": "Ahmedabad Municipal Corporation",
+    "estimatedCost": "",
+    "department": "Urban Development and Urban Housing Department",
+    "subDepartment": "Garden Department",
+    "submissionDate": "21-04-2026 18:00",
+    "downloadableDocuments": [
+      {
+        "name": "Yoga Center Garden Vol I V1.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=3e79d1ce-2053-467c-8db2-05586039b2ef&name=Yoga%20Center%20Garden%20Vol%20I%20V1.pdf"
+      },
+      {
+        "name": "Yoga Center Garden Vol II V2.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=aa1df178-fe64-4467-b7d5-c227dd6427e4&name=Yoga%20Center%20Garden%20Vol%20II%20V2.pdf"
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "name": "EMD",
+        "link": null
+      },
+      {
+        "name": "Tender Fees",
+        "link": null
+      },
+      {
+        "name": "All required documents",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of Bid Processing Fee",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of EMD Document",
+        "link": null
+      }
+    ],
+    "rawData": {
+      "5": "Tender Fee Form",
+      "6": "Emd Fee Form",
+      "41665": "Financial Quote",
+      "Organization Name": "Ahmedabad Municipal Corporation",
+      "Location": "Ahmedabad",
+      "Department": "Urban Development and Urban Housing Department",
+      "Sub Department": "Garden Department",
+      "IFB/Tender Notice No": "356_46/2025-26",
+      "Tender Type": "Open",
+      "Tender title/Name Of Project": "Selection of Agencies for Development of New Garden/Park (Yoga Center Garden, North Zone) along with the maintenance of the same for 5 Years for \nParks & Garden Department, AMC.",
+      "Description of Material/Name of Work": "Selection of Agencies for Development of New Garden/Park (Yoga Center Garden, North Zone) along with the maintenance of the same for 5 Years for \nParks & Garden Department, AMC.",
+      "Sector Category": "State Governments & UT",
+      "Form of Contract": "Works",
+      "Product Category": "Miscellaneous Works",
+      "Tender Category": "WORKS",
+      "Tender Currency Type": "Single",
+      "Tender Currency Setting": "Indian Rupee",
+      "Period of Completion/Delivery Period": "As per tender Document Attached",
+      "Procurement Type": "Works",
+      "Consortium / Joint Venture": "N/A",
+      "Rebate": "N/A",
+      "Alternate decrypter": "N/A",
+      "Bid Document Download Start Date": "26-03-2026 19:10",
+      "Bid document download End Date": "21-04-2026 18:00",
+      "Bid Submission Start Date": "26-03-2026 19:10",
+      "Bid Submission Closing Date": "21-04-2026 18:00",
+      "Tender NIT View Date": "26-03-2026 19:10",
+      "Remarks": "Between 21/04//2026 (during office hours) to 23/04/2026, up to 14:00 hours to the Tender Officer, Central Record Office, old building, Sardar Patel Bhavan, Khamasa, Danapith Ahmedabad -380001, only after online submission. AMC shall summarily reject any technical bid in hard copy submitted prior/later to the off online submission date and time.",
+      "Pre-Bid Meeting Mode": "Offline",
+      "Pre-Bid Meeting Opening Date": "06-04-2026 11:00",
+      "Bid validity": "180\n\t\t\t\t\t\t\t\t\t\t  Days",
+      "Bidding Processing Fee  ( OFFLINE)": "17,700        \n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Seventeen Thousand Seven hundred )",
+      "Bidding Processing Fee Payable to": "Municipal Commissioner, Ahmedabad",
+      "Bidding Processing Fee Payable at": "Ahmedabad",
+      "Bid Security/EMD/Proposal Security INR (\n\t\t\t\t\t\t\t\t\t\t\tOFFLINE)": "718,502\n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Seven lacs Eighteen Thousand Five hundred Two )",
+      "Bid Security/EMD/Proposal Security INR Payable to": "Municipal Commissioner, Ahmedabad",
+      "Bid Security/EMD/Proposal Security INR Payable at": "Ahmedabad",
+      "Exempted Fee": "No",
+      "Officer Inviting Bids": "Dy Commissioner, Parks and Garden Department,Ahmedabad",
+      "Bid Opening Authority": "TENDER OFFICER",
+      "Address": "CENTRAL RECORD DEPARTMENT, BLOCK-B, MAZANING FLOOR, SARDAR PATEL BHAVAN, DANAPITH, AHEMDABAD-380001.",
+      "Contact Details": "07929916355",
+      "Preliminary": "23-04-2026 15:00",
+      "Commercial": "23-04-2026 15:10",
+      "Cert Serial No.": "624b5460",
+      "Subject Dn": "'CN=PATEL DILIPKUMAR AMRUTLAL, SERIALNUMBER=fdfee7654fa39bcb9fa9c964062958a2e5ae95403eef3f21eb3c08defabaf704, ST=Gujarat, OID.2.5.4.17=380006, OU=\"PARKS AND GARDEN DEPARTMENT AMC,CID - 7040049\", OID.2.5.4.20=3b96448b817d6c43024888a3297985d33801a4e1b7eb8bcf63e9f4d29c3bce72, O=PARKS AND GARDEN DEPARTMENT AMC, C=IN'",
+      "Cert Issuer": "CN=(n)Code Solutions Sub-CA for DSC 2022, OU=Sub-CA, O=Gujarat Narmada Valley Fertilizers and Chemicals Limited, C=IN",
+      "Thumbprint": "d6 36 64 5d e0 74 87 63 c2 16 1f 46 99 17 1d 71 ad 9b bc f5"
+    }
+  },
+  {
+    "id": "290453",
+    "name": "",
+    "organisation": "Roads and Buildings",
+    "estimatedCost": "33478098.34 INR.  (Three crore Thirty Four Lacs Seventy Eight Thousand zero Ninety Eight Point Three  Four Only)",
+    "department": "Roads and Buildings",
+    "subDepartment": "Godhra Division",
+    "submissionDate": "17-04-2026 18:00",
+    "downloadableDocuments": [
+      {
+        "name": "NIVIDA.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=be0a44ff-ea5b-45cc-aa26-7f90c9fb9e73&name=NIVIDA.pdf"
+      },
+      {
+        "name": "BOQ.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=80faf9ff-d4fb-4eb1-a70c-798709c6cdce&name=BOQ.pdf"
+      },
+      {
+        "name": "SBD.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=383fdfe6-6039-4c46-9f50-734abba94e98&name=SBD.pdf"
+      },
+      {
+        "name": "SCH OF TEST.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=4bbd4f05-8736-4097-a5ef-819d8213a476&name=SCH%20OF%20TEST.pdf"
+      },
+      {
+        "name": "SPECI.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=72846046-2432-451e-92ab-3b7dce3805df&name=SPECI.pdf"
+      },
+      {
+        "name": "Special condition.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=e04de285-c67d-4b9b-bce2-96704433447d&name=Special%20condition.pdf"
+      },
+      {
+        "name": "STD SPECI.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=3ffd1049-405f-4cb8-9e54-bae525b334ec&name=STD%20SPECI.pdf"
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "name": "Tender Fee and EMD",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of Bid Processing Fee",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of EMD Document",
+        "link": null
+      },
+      {
+        "name": "BOQ",
+        "link": null
+      }
+    ],
+    "rawData": {
+      "4": "Percentage Rate",
+      "5": "Tender Fee Form",
+      "6": "Emd Fee Form",
+      "Organization Name": "Roads and Buildings",
+      "Location": "Panchmahal",
+      "Department": "Roads and Buildings",
+      "Sub Department": "Godhra Division",
+      "IFB/Tender Notice No": "35 OF 2025 - 26",
+      "Tender Type": "Open",
+      "Tender title/Name Of Project": "BUDGETTED",
+      "Description of Material/Name of Work": "Resurfacing & Stregnthning of Sahera Bhadrala Khatakpur Road Ch 0/0 To 6/0, Ta, Sahera Dist. Panchmahal",
+      "Sector Category": "Civil Supplies / Public Distribution System",
+      "Form of Contract": "Works",
+      "Product Category": "Civil Works - Roads",
+      "Tender Category": "WORKS",
+      "Estimated Cost Value": "33478098.34 INR.  (Three crore Thirty Four Lacs Seventy Eight Thousand zero Ninety Eight Point Three  Four Only)",
+      "Is ECV Visible to Supplier?": "Yes",
+      "Tender Currency Type": "Single",
+      "Tender Currency Setting": "Indian Rupee",
+      "Period of Completion/Delivery Period": "04  Months",
+      "Procurement Type": "Works",
+      "Consortium / Joint Venture": "N/A",
+      "Rebate": "Applicable",
+      "Alternate decrypter": "N/A",
+      "Bid Document Download Start Date": "26-03-2026 19:00",
+      "Bid document download End Date": "17-04-2026 12:00",
+      "Bid Submission Start Date": "26-03-2026 19:00",
+      "Bid Submission Closing Date": "17-04-2026 18:00",
+      "Tender NIT View Date": "26-03-2026 19:00",
+      "Remarks": "Contractor should submit the D.D. of Tender fee & EMD in physical at the time of tender opening or send the same through form by RPAD / Speed post so as to reach to the Ex. Engr., R&B Division, Godhra in seal cover duly subscribing the name of work on or before Dt.17.4.26 to 24.4.26 during office hours.",
+      "Pre-Bid Meeting": "No Meeting",
+      "Bid validity": "120\n\t\t\t\t\t\t\t\t\t\t  Days",
+      "Bidding Processing Fee  ( OFFLINE)": "6,000        \n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Six thousand )",
+      "Bidding Processing Fee Payable to": "EXECUTIVE ENGINEER, R & B DIVISION, GODHRA",
+      "Bidding Processing Fee Payable at": "GODHRA",
+      "Bid Security/EMD/Proposal Security INR (\n\t\t\t\t\t\t\t\t\t\t\tOFFLINE)": "335,000\n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Three lacs Thirty Five Thousand  )",
+      "Bid Security/EMD/Proposal Security INR Payable to": "EXECUTIVE ENGINEER, R & B DIVISION, GODHRA",
+      "Bid Security/EMD/Proposal Security INR Payable at": "GODHRA",
+      "Exempted Fee": "Yes",
+      "Minimum FDR": "335,000 INR.",
+      "Maximum FDR": "335,000 INR.",
+      "Officer Inviting Bids": "Executive Engineer, R & B Division, Godhra",
+      "Bid Opening Authority": "Superintending Engineer, R & B Circle, Vadodara",
+      "Address": "Kothi Kacheri, West Wing, Vadodara",
+      "Contact Details": "rnb_pan@yahoo.in",
+      "PRILIMINARY STAGE": "18-04-2026 12:05",
+      "COMMERCIAL STAGE": "18-04-2026 12:10",
+      "Cert Serial No.": "6eb95eb0",
+      "Subject Dn": "CN=PIYUSHKUMAR RATILAL CHAUDHARI, SERIALNUMBER=2560BC1994A7BB21942EC96DF6D3E9EFC8AD298FB6E139029F0091B0EB9C77A2, ST=GUJARAT, OID.2.5.4.17=389001, OID.2.5.4.20=8a6e8fd18b87c898fad0415c971bd8ed4f22d58e2d1cf0815f2bd836ec8cae23, OU=GOVERNMENT, O=EX.ENGINEER R AND B DIVISION GODHARA, C=IN",
+      "Cert Issuer": "CN=SafeScrypt sub-CA for Class 3 Organization 2022, OU=Sub-CA, O=Sify Technologies Limited, C=IN",
+      "Thumbprint": "aa d6 64 02 f7 55 e6 90 09 58 07 bd 9f d0 83 37 cb 11 ef ba"
+    }
+  },
+  {
+    "id": "290445",
+    "name": "",
+    "organisation": "Ahmedabad Municipal Corporation",
+    "estimatedCost": "",
+    "department": "Urban Development and Urban Housing Department",
+    "subDepartment": "Garden Department",
+    "submissionDate": "21-04-2026 18:00",
+    "downloadableDocuments": [
+      {
+        "name": "Chandlodiya Garden-1 Vol II V2.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=d4a777d5-30a1-4734-b785-55afff544fe8&name=Chandlodiya%20Garden-1%20Vol%20II%20V2.pdf"
+      },
+      {
+        "name": "Chandlodiya Garden-1 Vol I V1.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=d367e3a4-d19d-46cd-8ddc-de53a901b2d2&name=Chandlodiya%20Garden-1%20Vol%20I%20V1.pdf"
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "name": "EMD",
+        "link": null
+      },
+      {
+        "name": "Tender Fees",
+        "link": null
+      },
+      {
+        "name": "All required documents",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of Bid Processing Fee",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of EMD Document",
+        "link": null
+      }
+    ],
+    "rawData": {
+      "5": "Tender Fee Form",
+      "6": "Emd Fee Form",
+      "41664": "Financial Quote",
+      "Organization Name": "Ahmedabad Municipal Corporation",
+      "Location": "Ahmedabad",
+      "Department": "Urban Development and Urban Housing Department",
+      "Sub Department": "Garden Department",
+      "IFB/Tender Notice No": "355_46/2025-26",
+      "Tender Type": "Open",
+      "Tender title/Name Of Project": "Selection of Agencies for Development of New Garden/Park (Chandlodia Garden-1, North West Zone) along with the maintenance of the same for 5 Years for Parks & Garden Department, AMC.",
+      "Description of Material/Name of Work": "Selection of Agencies for Development of New Garden/Park (Chandlodia Garden-1, North West Zone) along with the maintenance of the same for 5 Years for Parks & Garden Department, AMC",
+      "Sector Category": "State Governments & UT",
+      "Form of Contract": "Works",
+      "Product Category": "Miscellaneous Works",
+      "Tender Category": "WORKS",
+      "Tender Currency Type": "Single",
+      "Tender Currency Setting": "Indian Rupee",
+      "Period of Completion/Delivery Period": "As per tender Document Attached",
+      "Procurement Type": "Works",
+      "Consortium / Joint Venture": "N/A",
+      "Rebate": "N/A",
+      "Alternate decrypter": "N/A",
+      "Bid Document Download Start Date": "26-03-2026 18:40",
+      "Bid document download End Date": "21-04-2026 18:00",
+      "Bid Submission Start Date": "26-03-2026 18:40",
+      "Bid Submission Closing Date": "21-04-2026 18:00",
+      "Tender NIT View Date": "26-03-2026 18:40",
+      "Remarks": "Between 21/04//2026 (during office hours) to 23/04/2026, up to 14:00 hours to the Tender Officer, Central Record Office, old building, Sardar Patel Bhavan, Khamasa, Danapith Ahmedabad -380001, only after online submission. AMC shall summarily reject any technical bid in hard copy submitted prior/later to the off online submission date and time.",
+      "Pre-Bid Meeting Mode": "Offline",
+      "Pre-Bid Meeting Opening Date": "06-04-2026 11:00",
+      "Bid validity": "180\n\t\t\t\t\t\t\t\t\t\t  Days",
+      "Bidding Processing Fee  ( OFFLINE)": "17,700        \n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Seventeen Thousand Seven hundred )",
+      "Bidding Processing Fee Payable to": "Municipal Commissioner, Ahmedabad",
+      "Bidding Processing Fee Payable at": "Ahmedabad",
+      "Bid Security/EMD/Proposal Security INR (\n\t\t\t\t\t\t\t\t\t\t\tOFFLINE)": "474,720\n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Four lacs Seventy Four Thousand Seven hundred Twenty )",
+      "Bid Security/EMD/Proposal Security INR Payable to": "Municipal Commissioner, Ahmedabad",
+      "Bid Security/EMD/Proposal Security INR Payable at": "Ahmedabad",
+      "Exempted Fee": "No",
+      "Officer Inviting Bids": "Dy Commissioner, Parks and Garden Department,Ahmedabad",
+      "Bid Opening Authority": "TENDER OFFICER",
+      "Address": "CENTRAL RECORD DEPARTMENT, BLOCK-B, MAZANING FLOOR, SARDAR PATEL BHAVAN, DANAPITH, AHEMDABAD-380001.",
+      "Contact Details": "07929916355",
+      "Preliminary": "23-04-2026 15:00",
+      "Commercial": "23-04-2026 15:10",
+      "Cert Serial No.": "624b5460",
+      "Subject Dn": "'CN=PATEL DILIPKUMAR AMRUTLAL, SERIALNUMBER=fdfee7654fa39bcb9fa9c964062958a2e5ae95403eef3f21eb3c08defabaf704, ST=Gujarat, OID.2.5.4.17=380006, OU=\"PARKS AND GARDEN DEPARTMENT AMC,CID - 7040049\", OID.2.5.4.20=3b96448b817d6c43024888a3297985d33801a4e1b7eb8bcf63e9f4d29c3bce72, O=PARKS AND GARDEN DEPARTMENT AMC, C=IN'",
+      "Cert Issuer": "CN=(n)Code Solutions Sub-CA for DSC 2022, OU=Sub-CA, O=Gujarat Narmada Valley Fertilizers and Chemicals Limited, C=IN",
+      "Thumbprint": "d6 36 64 5d e0 74 87 63 c2 16 1f 46 99 17 1d 71 ad 9b bc f5"
+    }
+  },
+  {
+    "id": "290451",
+    "name": "",
+    "organisation": "Roads and Buildings",
+    "estimatedCost": "36435706.04 INR.  (Three crore Sixty Four Lacs Thirty Five Thousand Seven hundred Six Point Zero Four Only)",
+    "department": "Roads and Buildings",
+    "subDepartment": "Godhra Division",
+    "submissionDate": "17-04-2026 18:00",
+    "downloadableDocuments": [
+      {
+        "name": "NIVIDA.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=04c72ea7-1b7a-4d2a-9d20-df6a92bb139d&name=NIVIDA.pdf"
+      },
+      {
+        "name": "BOQ.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=33da34ad-e2e8-452c-89d0-fd381e49cc3c&name=BOQ.pdf"
+      },
+      {
+        "name": "SBD.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=749f1bc2-3dbf-4cde-9a36-48dcb38f93d1&name=SBD.pdf"
+      },
+      {
+        "name": "SCH OF TEST.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=73fc838e-8517-4583-bf21-ad4d463ab559&name=SCH%20OF%20TEST.pdf"
+      },
+      {
+        "name": "SPECI.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=ce03dc74-14a9-48ba-abef-ffce8ad80595&name=SPECI.pdf"
+      },
+      {
+        "name": "Special condition.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=ce45e895-50cb-47f7-a5a7-b30d71125476&name=Special%20condition.pdf"
+      },
+      {
+        "name": "STD SPECI.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=e98a35f3-7573-43bb-8a2a-0201e75aed80&name=STD%20SPECI.pdf"
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "name": "Tender Fee and EMD",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of Bid Processing Fee",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of EMD Document",
+        "link": null
+      },
+      {
+        "name": "BOQ",
+        "link": null
+      }
+    ],
+    "rawData": {
+      "4": "Percentage Rate",
+      "5": "Tender Fee Form",
+      "6": "Emd Fee Form",
+      "Organization Name": "Roads and Buildings",
+      "Location": "Panchmahal",
+      "Department": "Roads and Buildings",
+      "Sub Department": "Godhra Division",
+      "IFB/Tender Notice No": "35 OF 2025 - 26",
+      "Tender Type": "Open",
+      "Tender title/Name Of Project": "BUDGETTED",
+      "Description of Material/Name of Work": "Resurfacing & Stregnthning Of Mangalpur To Nandarava Road (MDR)  Ch. 0/0 - 6/4 Ta., Sahera, Dist. Panchmahal",
+      "Sector Category": "Civil Supplies / Public Distribution System",
+      "Form of Contract": "Works",
+      "Product Category": "Civil Works - Roads",
+      "Tender Category": "WORKS",
+      "Estimated Cost Value": "36435706.04 INR.  (Three crore Sixty Four Lacs Thirty Five Thousand Seven hundred Six Point Zero Four Only)",
+      "Is ECV Visible to Supplier?": "Yes",
+      "Tender Currency Type": "Single",
+      "Tender Currency Setting": "Indian Rupee",
+      "Period of Completion/Delivery Period": "04  Months",
+      "Procurement Type": "Works",
+      "Consortium / Joint Venture": "N/A",
+      "Rebate": "Applicable",
+      "Alternate decrypter": "N/A",
+      "Bid Document Download Start Date": "26-03-2026 19:00",
+      "Bid document download End Date": "17-04-2026 12:00",
+      "Bid Submission Start Date": "26-03-2026 19:00",
+      "Bid Submission Closing Date": "17-04-2026 18:00",
+      "Tender NIT View Date": "26-03-2026 19:00",
+      "Remarks": "Contractor should submit the D.D. of Tender fee & EMD in physical at the time of tender opening or send the same through form by RPAD / Speed post so as to reach to the Ex. Engr., R&B Division, Godhra in seal cover duly subscribing the name of work on or before Dt.17.4.26 to 24.4.26 during office hours.",
+      "Pre-Bid Meeting": "No Meeting",
+      "Bid validity": "120\n\t\t\t\t\t\t\t\t\t\t  Days",
+      "Bidding Processing Fee  ( OFFLINE)": "6,000        \n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Six thousand )",
+      "Bidding Processing Fee Payable to": "EXECUTIVE ENGINEER, R & B DIVISION, GODHRA",
+      "Bidding Processing Fee Payable at": "GODHRA",
+      "Bid Security/EMD/Proposal Security INR (\n\t\t\t\t\t\t\t\t\t\t\tOFFLINE)": "365,000\n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Three lacs Sixty Five Thousand  )",
+      "Bid Security/EMD/Proposal Security INR Payable to": "EXECUTIVE ENGINEER, R & B DIVISION, GODHRA",
+      "Bid Security/EMD/Proposal Security INR Payable at": "GODHRA",
+      "Exempted Fee": "Yes",
+      "Minimum FDR": "365,000 INR.",
+      "Maximum FDR": "365,000 INR.",
+      "Officer Inviting Bids": "Executive Engineer, R & B Division, Godhra",
+      "Bid Opening Authority": "Superintending Engineer, R & B Circle, Vadodara",
+      "Address": "Kothi Kacheri, West Wing, Vadodara",
+      "Contact Details": "rnb_pan@yahoo.in",
+      "PRILIMINARY STAGE": "18-04-2026 12:05",
+      "COMMERCIAL STAGE": "18-04-2026 12:10",
+      "Cert Serial No.": "6eb95eb0",
+      "Subject Dn": "CN=PIYUSHKUMAR RATILAL CHAUDHARI, SERIALNUMBER=2560BC1994A7BB21942EC96DF6D3E9EFC8AD298FB6E139029F0091B0EB9C77A2, ST=GUJARAT, OID.2.5.4.17=389001, OID.2.5.4.20=8a6e8fd18b87c898fad0415c971bd8ed4f22d58e2d1cf0815f2bd836ec8cae23, OU=GOVERNMENT, O=EX.ENGINEER R AND B DIVISION GODHARA, C=IN",
+      "Cert Issuer": "CN=SafeScrypt sub-CA for Class 3 Organization 2022, OU=Sub-CA, O=Sify Technologies Limited, C=IN",
+      "Thumbprint": "aa d6 64 02 f7 55 e6 90 09 58 07 bd 9f d0 83 37 cb 11 ef ba"
+    }
+  },
+  {
+    "id": "290449",
+    "name": "",
+    "organisation": "Ahmedabad Municipal Corporation",
+    "estimatedCost": "781527.67 INR.  (Seven lacs Eighty One Thousand Five hundred Twenty Seven Point Six  Seven Only)",
+    "department": "Urban Development and Urban Housing Department",
+    "subDepartment": "Central Zone",
+    "submissionDate": "07-04-2026 18:00",
+    "downloadableDocuments": [
+      {
+        "name": "TENDER NO.520.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=c0927ecc-27b1-4af5-8474-b814aa645b6e&name=TENDER%20NO.520.pdf"
+      }
+    ],
+    "requiredDocuments": [],
+    "rawData": {
+      "4": "Percentage Rate",
+      "5": "Tender Fee Form",
+      "6": "Emd Fee Form",
+      "Organization Name": "Ahmedabad Municipal Corporation",
+      "Location": "Ahmedabad",
+      "Department": "Urban Development and Urban Housing Department",
+      "Sub Department": "Central Zone",
+      "IFB/Tender Notice No": "CENTRAL ZONE E-Tender Notice No.17/2025-2026 Tender No.520",
+      "Tender Type": "Open",
+      "Tender title/Name Of Project": "Const. R.C.C. Road and Paver Block at Dudheshwar area, Old Shahpur, Mahendikua area and diff. Places Under Muni.Counisilor, M.P., M.L.A. and Other budget in Shahpur ward.",
+      "Description of Material/Name of Work": "Const. R.C.C. Road and Paver Block at Dudheshwar area, Old Shahpur, Mahendikua area and diff. Places Under Muni.Counisilor, M.P., M.L.A. and Other budget in Shahpur ward.",
+      "Sector Category": "State Governments & UT",
+      "Form of Contract": "Works",
+      "Product Category": "Civil Works - Others",
+      "Tender Category": "WORKS",
+      "Estimated Cost Value": "781527.67 INR.  (Seven lacs Eighty One Thousand Five hundred Twenty Seven Point Six  Seven Only)",
+      "Is ECV Visible to Supplier?": "Yes",
+      "Tender Currency Type": "Single",
+      "Tender Currency Setting": "Indian Rupee",
+      "Period of Completion/Delivery Period": "12  Months",
+      "Procurement Type": "Works",
+      "Consortium / Joint Venture": "N/A",
+      "Rebate": "N/A",
+      "Alternate decrypter": "N/A",
+      "Bid Document Download Start Date": "26-03-2026 19:00",
+      "Bid document download End Date": "07-04-2026 18:00",
+      "Bid Submission Start Date": "26-03-2026 19:00",
+      "Bid Submission Closing Date": "07-04-2026 18:00",
+      "Tender NIT View Date": "N/A",
+      "Remarks": "Document shall be submitted in sealed envelope systems By RPAD/Speed post/ Hand Delivery in sealed covers in Duplicate. (One Original & One Duplicate) duly sign & seal by contractor. Tender Fee, EMD & Document sealed to qualifying criteria should be submitted Physically Up to Dt.08/04/2026 Up to 16.00 Hrs.",
+      "Pre-Bid Meeting": "No Meeting",
+      "Bid validity": "120\n\t\t\t\t\t\t\t\t\t\t  Days",
+      "Bidding Processing Fee  ( OFFLINE)": "900        \n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Nine hundred )",
+      "Bidding Processing Fee Payable to": "Municipal Commissioner, Ahmedabad",
+      "Bidding Processing Fee Payable at": "Ahmedabad",
+      "Bid Security/EMD/Proposal Security INR (\n\t\t\t\t\t\t\t\t\t\t\tOFFLINE)": "7,815\n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Seven thousand Eight hundred Fifteen )",
+      "Bid Security/EMD/Proposal Security INR Payable to": "Municipal Commissioner, Ahmedabad",
+      "Bid Security/EMD/Proposal Security INR Payable at": "Ahmedabad",
+      "Exempted Fee": "No",
+      "Officer Inviting Bids": "Ahmedabad Municipal Corporation Central Zone",
+      "Bid Opening Authority": "Amit N.Patel",
+      "Address": "B-Block, 4th Floor, Sardar Patel Bhavan Danapith, Ahmedabad-380001",
+      "Contact Details": "addcecz@ahmedabadcity.gov.in",
+      "Preliminary Stage": "08-04-2026 17:00",
+      "Commercial Stage": "08-04-2026 17:05",
+      "Cert Serial No.": "624c51f9",
+      "Subject Dn": "'CN=AMIT NARESHBHAI PATEL, SERIALNUMBER=fc97681b1f9e84abd095af7fdd11fc2db05312cc7ef78f57339b889a487dd258, ST=Gujarat, OID.2.5.4.17=380001, OU=\"Admin,CID - 7083004\", OID.2.5.4.20=382422d952499f9f9404cb41b3acde0552f9a98921e52eefbede7fa14a4f5ca6, O=AHMEADABAD MUNICIPAL CORPORATION CENTRAL ZONE, C=IN'",
+      "Cert Issuer": "CN=(n)Code Solutions Sub-CA for DSC 2022, OU=Sub-CA, O=Gujarat Narmada Valley Fertilizers and Chemicals Limited, C=IN",
+      "Thumbprint": "6e 8b b3 0e b1 aa 26 4a 32 bb a8 ee cf 65 40 5b e1 bf 05 f4"
+    }
+  },
+  {
+    "id": "290446",
+    "name": "",
+    "organisation": "Roads and Buildings",
+    "estimatedCost": "37431492.69 INR.  (Three crore Seventy Four Lacs Thirty One Thousand Four hundred Ninety Two Point Six  Nine Only)",
+    "department": "Roads and Buildings",
+    "subDepartment": "Godhra Division",
+    "submissionDate": "17-04-2026 18:00",
+    "downloadableDocuments": [
+      {
+        "name": "NIVIDA.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=fc6cc7ff-8ae3-4147-9946-3ac899ca1d0e&name=NIVIDA.pdf"
+      },
+      {
+        "name": "SCH OF TEST.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=e15d61bc-b39e-4d11-a343-1ff990495da1&name=SCH%20OF%20TEST.pdf"
+      },
+      {
+        "name": "BOQ.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=9778fa35-fb16-4252-8c86-2190b69ffa33&name=BOQ.pdf"
+      },
+      {
+        "name": "SBD.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=e53cc2e6-7ab1-483f-a71f-bf4682aaa8e4&name=SBD.pdf"
+      },
+      {
+        "name": "SPECI.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=756697de-573b-4bf3-8154-b0c918101611&name=SPECI.pdf"
+      },
+      {
+        "name": "Special condition.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=8becbbaa-04ac-42a7-8a1d-6f91e6de7813&name=Special%20condition.pdf"
+      },
+      {
+        "name": "STD SPECI.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=d3c29820-f0de-4e1d-814a-7b52a47a0444&name=STD%20SPECI.pdf"
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "name": "Tender Fee and EMD",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of Bid Processing Fee",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of EMD Document",
+        "link": null
+      },
+      {
+        "name": "BOQ",
+        "link": null
+      }
+    ],
+    "rawData": {
+      "4": "Percentage Rate",
+      "5": "Tender Fee Form",
+      "6": "Emd Fee Form",
+      "Organization Name": "Roads and Buildings",
+      "Location": "Panchmahal",
+      "Department": "Roads and Buildings",
+      "Sub Department": "Godhra Division",
+      "IFB/Tender Notice No": "35 OF 2025 - 26",
+      "Tender Type": "Open",
+      "Tender title/Name Of Project": "BUDGETTED",
+      "Description of Material/Name of Work": "(Package) (1) Resurfacing & Stregnthning Of Khatakpur To Shekhapur Road Ch 0/0 To 3/66 (2) Resurfacing & Stregnthning Of Nandarava - Khatakpur Road Ch. 0/0 to 2/88",
+      "Sector Category": "Civil Supplies / Public Distribution System",
+      "Form of Contract": "Works",
+      "Product Category": "Civil Works - Roads",
+      "Tender Category": "WORKS",
+      "Estimated Cost Value": "37431492.69 INR.  (Three crore Seventy Four Lacs Thirty One Thousand Four hundred Ninety Two Point Six  Nine Only)",
+      "Is ECV Visible to Supplier?": "Yes",
+      "Tender Currency Type": "Single",
+      "Tender Currency Setting": "Indian Rupee",
+      "Period of Completion/Delivery Period": "04  Months",
+      "Procurement Type": "Works",
+      "Consortium / Joint Venture": "N/A",
+      "Rebate": "Applicable",
+      "Alternate decrypter": "N/A",
+      "Bid Document Download Start Date": "26-03-2026 19:00",
+      "Bid document download End Date": "17-04-2026 12:00",
+      "Bid Submission Start Date": "26-03-2026 19:00",
+      "Bid Submission Closing Date": "17-04-2026 18:00",
+      "Tender NIT View Date": "26-03-2026 19:00",
+      "Remarks": "Contractor should submit the D.D. of Tender fee & EMD in physical at the time of tender opening or send the same through form by RPAD / Speed post so as to reach to the Ex. Engr., R&B Division, Godhra in seal cover duly subscribing the name of work on or before Dt.17.4.26 to 24.4.26 during office hours.",
+      "Pre-Bid Meeting": "No Meeting",
+      "Bid validity": "120\n\t\t\t\t\t\t\t\t\t\t  Days",
+      "Bidding Processing Fee  ( OFFLINE)": "6,000        \n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Six thousand )",
+      "Bidding Processing Fee Payable to": "EXECUTIVE ENGINEER, R & B DIVISION, GODHRA",
+      "Bidding Processing Fee Payable at": "GODHRA",
+      "Bid Security/EMD/Proposal Security INR (\n\t\t\t\t\t\t\t\t\t\t\tOFFLINE)": "375,000\n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Three lacs Seventy Five Thousand  )",
+      "Bid Security/EMD/Proposal Security INR Payable to": "EXECUTIVE ENGINEER, R & B DIVISION, GODHRA",
+      "Bid Security/EMD/Proposal Security INR Payable at": "GODHRA",
+      "Exempted Fee": "Yes",
+      "Minimum FDR": "375,000 INR.",
+      "Maximum FDR": "375,000 INR.",
+      "Officer Inviting Bids": "Executive Engineer, R & B Division, Godhra",
+      "Bid Opening Authority": "Superintending Engineer, R & B Circle, Vadodara",
+      "Address": "Kothi Kacheri, West Wing, Vadodara",
+      "Contact Details": "rnb_pan@yahoo.in",
+      "PRILIMINARY STAGE": "18-04-2026 12:05",
+      "COMMERCIAL STAGE": "18-04-2026 12:10",
+      "Cert Serial No.": "6eb95eb0",
+      "Subject Dn": "CN=PIYUSHKUMAR RATILAL CHAUDHARI, SERIALNUMBER=2560BC1994A7BB21942EC96DF6D3E9EFC8AD298FB6E139029F0091B0EB9C77A2, ST=GUJARAT, OID.2.5.4.17=389001, OID.2.5.4.20=8a6e8fd18b87c898fad0415c971bd8ed4f22d58e2d1cf0815f2bd836ec8cae23, OU=GOVERNMENT, O=EX.ENGINEER R AND B DIVISION GODHARA, C=IN",
+      "Cert Issuer": "CN=SafeScrypt sub-CA for Class 3 Organization 2022, OU=Sub-CA, O=Sify Technologies Limited, C=IN",
+      "Thumbprint": "aa d6 64 02 f7 55 e6 90 09 58 07 bd 9f d0 83 37 cb 11 ef ba"
+    }
+  },
+  {
+    "id": "290447",
+    "name": "",
+    "organisation": "Roads and Buildings",
+    "estimatedCost": "8346141.42 INR.  (Eighty Three Lacs Forty Six Thousand One hundred Forty One Point Four  Two Only)",
+    "department": "Roads and Buildings",
+    "subDepartment": "Panchayat-Surat",
+    "submissionDate": "04-04-2026 18:00",
+    "downloadableDocuments": [
+      {
+        "name": "3.Cement Standards -11-05-17 GR 2 Side.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=e1fbd2ba-371f-4a73-a573-79d0a812d6cc&name=3.Cement%20Standards%20-11-05-17%20GR%202%20Side.pdf"
+      },
+      {
+        "name": "4.Tender Negotiation.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=fca7c192-6537-4f74-ad18-e7ae23275a9b&name=4.Tender%20Negotiation.pdf"
+      },
+      {
+        "name": "5.Laboratory GR.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=2a4134d3-8c09-4c7b-8e6d-542ddda82727&name=5.Laboratory%20GR.pdf"
+      },
+      {
+        "name": "6.GST GR.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=2089ac8f-0e31-4d0a-8157-072f65eb94f5&name=6.GST%20GR.pdf"
+      },
+      {
+        "name": "7.Steel Lap.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=c5ce6961-91cb-4052-b748-e7f4d4414b03&name=7.Steel%20Lap.pdf"
+      },
+      {
+        "name": "11. Other GR.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=cdf778f0-77e3-4afc-bd0c-cb50c2297fb7&name=11.%20Other%20GR.pdf"
+      },
+      {
+        "name": "8.Clause 47 48.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=3a6def9a-90b6-40ca-92c5-8d4e6e8579c3&name=8.Clause%2047%2048.pdf"
+      },
+      {
+        "name": "Cement consumption gr.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=883d1f2c-e048-420a-8a10-a65f61d9c7b9&name=Cement%20consumption%20gr.pdf"
+      },
+      {
+        "name": "GST GR 1.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=9625f10d-555a-4818-a17d-93dedeaf1881&name=GST%20GR%201.pdf"
+      },
+      {
+        "name": "5.GR.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=e7371742-3d6e-4d30-b1b3-3d84e75a6f8e&name=5.GR.pdf"
+      },
+      {
+        "name": "4.0 tender booklet.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=3c562692-8e26-4809-8657-6f015edbecb0&name=4.0%20tender%20booklet.pdf"
+      },
+      {
+        "name": "3. SBD GR.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=5fb77358-f9d7-459d-b03e-5c5be552470c&name=3.%20SBD%20GR.pdf"
+      },
+      {
+        "name": "Building Test schedule.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=07ecb496-1de2-4228-b17c-0811baf757c1&name=Building%20Test%20schedule.pdf"
+      },
+      {
+        "name": "Environment GR_11zon.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=01720bc2-0007-4af2-8ebb-397dcabc6d40&name=Environment%20GR_11zon.pdf"
+      },
+      {
+        "name": "1. SBD.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=a67c8a89-be48-4d12-acba-505be260bd16&name=1.%20SBD.pdf"
+      },
+      {
+        "name": "2. DTP.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=5d3160ad-300c-4063-9809-614b55329299&name=2.%20DTP.pdf"
+      },
+      {
+        "name": "4. Technical Specification.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=91107029-76ef-4fe8-8fe8-596b7430cbc5&name=4.%20Technical%20Specification.pdf"
+      },
+      {
+        "name": "7. Instruction to bidder.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=1ef071eb-e09d-4452-b8f1-bd49f586efb1&name=7.%20Instruction%20to%20bidder.pdf"
+      },
+      {
+        "name": "CC section dowel bar Drawing.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=9ec742f1-2a91-400b-b8c7-1ee344f724a4&name=CC%20section%20dowel%20bar%20Drawing.pdf"
+      },
+      {
+        "name": "5. Road furniture testing schedule.pdf",
+        "link": "https://tender.nprocure.com/common/download?uid=18fd36e8-3913-4abb-a8a5-90f7afb792a5&name=5.%20Road%20furniture%20testing%20schedule.pdf"
+      }
+    ],
+    "requiredDocuments": [
+      {
+        "name": "PLEASE ATTECH TENDER FEE DD",
+        "link": null
+      },
+      {
+        "name": "PLEASE ATTECH EMD DD",
+        "link": null
+      },
+      {
+        "name": "PLEASE ATTECH SCAN COPY OFF VALID REGISTRATION",
+        "link": null
+      },
+      {
+        "name": "PLEASE ATTECH SCAN COPY OFF VALID SOVLVANCY",
+        "link": null
+      },
+      {
+        "name": "PLEASE ATTECH SCAN COPY OF REQUIRED DOCUMENTS AS PER TENDER DOCUMENT",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of Bid Processing Fee",
+        "link": null
+      },
+      {
+        "name": "Provide any proof of EMD Document",
+        "link": null
+      }
+    ],
+    "rawData": {
+      "4": "Percentage Rate",
+      "5": "Tender Fee Form",
+      "6": "Emd Fee Form",
+      "Organization Name": "Roads and Buildings",
+      "Location": "Surat",
+      "Department": "Roads and Buildings",
+      "Sub Department": "Panchayat-Surat",
+      "IFB/Tender Notice No": "33 OF 2025-26",
+      "Tender Type": "Open",
+      "Tender title/Name Of Project": "Suvidhapath 2025-26 Kharvasa Khambhasala Road Bet Ch 0/0 to 0/250 and  1/350 to 1/650  Ta. Choryasi Dist. Surat",
+      "Description of Material/Name of Work": "Suvidhapath 2025-26 Kharvasa Khambhasala Road Bet Ch 0/0 to 0/250 and  1/350 to 1/650  Ta. Choryasi Dist. Surat",
+      "Sector Category": "State Governments & UT",
+      "Form of Contract": "Works",
+      "Product Category": "Civil Works - Roads",
+      "Tender Category": "WORKS",
+      "Estimated Cost Value": "8346141.42 INR.  (Eighty Three Lacs Forty Six Thousand One hundred Forty One Point Four  Two Only)",
+      "Is ECV Visible to Supplier?": "Yes",
+      "Tender Currency Type": "Single",
+      "Tender Currency Setting": "Indian Rupee",
+      "Period of Completion/Delivery Period": "6  Months",
+      "Procurement Type": "Works",
+      "Consortium / Joint Venture": "N/A",
+      "Rebate": "N/A",
+      "Alternate decrypter": "N/A",
+      "Bid Document Download Start Date": "26-03-2026 19:00",
+      "Bid document download End Date": "04-04-2026 18:00",
+      "Bid Submission Start Date": "26-03-2026 19:00",
+      "Bid Submission Closing Date": "04-04-2026 18:00",
+      "Tender NIT View Date": "26-03-2026 19:00",
+      "Remarks": "Demand Draft for E.M.D. & tender fee shall be submitted in electronic format only through online ( by scanning) while uploading the bid. This submission shall mean that E.M.D. & tender fee are received for purpose of opening the bid. Accordingly offer of those shall be opened whose E.M.D. & tender fee is received electronically. However for the purpose of realization of D.D., bidder shall send the D.D. in original to S.E, at the time of tender opening or send the same through R.P.A.D. so as to reach to Executive Engineer, Panchayat (R&B) Division, Surat within 7 days from the last date of opening. Penaltative action for not submitting D.D. in original to E.E. by bidder shall be initiated and action shall be taken for abeyance of registration and cancellation of E-tendering code for one year as per Government Circular Dt.. F.D.R. and D.D. for Exemption Certificate for E.M.D. is not necessary. However, Exemption Certificate shall have to be submitted electronically through online. Any documents in supporting of bid shall be submitted in electronic format only through online (by scanning) & hard copy will not be accepted separately.Eligibility- Valid Bank Solvency issued calander year 2026 Class-D and Above& Spl Category III Road  & above",
+      "Pre-Bid Meeting": "No Meeting",
+      "Bid validity": "180\n\t\t\t\t\t\t\t\t\t\t  Days",
+      "Bidding Processing Fee  ( OFFLINE)": "2,400        \n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Two thousand Four hundred )",
+      "Bidding Processing Fee Payable to": "Executive Engineer, panchayat R & B Division, surat",
+      "Bidding Processing Fee Payable at": "surat",
+      "Bid Security/EMD/Proposal Security INR (\n\t\t\t\t\t\t\t\t\t\t\tOFFLINE)": "84,000\n\t\t\t\t\t\t\t\t\t\t\t\tINR. (Eighty Four Thousand  )",
+      "Bid Security/EMD/Proposal Security INR Payable to": "Executive Engineer, panchayat R & B Division, surat",
+      "Bid Security/EMD/Proposal Security INR Payable at": "surat",
+      "Exempted Fee": "Yes",
+      "Minimum FDR": "84,000 INR.",
+      "Maximum FDR": "84,000 INR.",
+      "Officer Inviting Bids": "Executive Engineer, panchayat, R & B Division, Surat.",
+      "Bid Opening Authority": "Superintending Engineer, Panchayat (R & B) Circle, Surat",
+      "Address": "OPP LANCER ARMY SCHOOL, JILLA PANCHAYAT BHAVAN, 4TH FLOOR, ROAD & BUILDING DEPARTMENT, VESU , SURAT",
+      "Contact Details": "2612473327",
+      "Prelimanery stage": "04-04-2026 18:05",
+      "Commercial Stage": "04-04-2026 18:10",
+      "Cert Serial No.": "624aba8a",
+      "Subject Dn": "'CN=KIRTESHKUMAR KHANDUBHAI PATEL, SERIALNUMBER=3e039fe6a2b17908024feec8ce8ed41a947c714a8c7b58a2d5bd66de449145e7, ST=Gujarat, OID.2.5.4.17=395001, OU=\"EXECUTIVE ENGINEER,CID - 7014065\", OID.2.5.4.20=d25c0b2a70054a686e2802f39b8b040dd16e742493564a5170f342acab6f65d2, O=EXECUTIVE ENGINEER PANCHAYAT ROAD AND BUILDING DIVISION SURAT, C=IN'",
+      "Cert Issuer": "CN=(n)Code Solutions Sub-CA for DSC 2022, OU=Sub-CA, O=Gujarat Narmada Valley Fertilizers and Chemicals Limited, C=IN",
+      "Thumbprint": "10 6e 26 98 c9 8d c2 f6 fd 40 28 bc 35 58 6c 53 ea 6a c2 34"
+    }
+  }
+]

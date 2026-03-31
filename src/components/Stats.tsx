@@ -1,4 +1,4 @@
-import { Users, FileText, Landmark, TrendingUp } from 'lucide-react';
+import { Users, FileText, Landmark, TrendingUp, Award } from 'lucide-react';
 
 export default function Stats({ stats }: { stats: any }) {
     return (
@@ -26,6 +26,12 @@ export default function Stats({ stats }: { stats: any }) {
                 value={stats.organisations} 
                 icon={<Users size={20} />} 
                 color="#8b5cf6"
+            />
+            <StatCard 
+                label="With Eligibility Criteria" 
+                value={stats.withEligibility || 0} 
+                icon={<Award size={20} />} 
+                color="#ec4899"
             />
         </div>
     );

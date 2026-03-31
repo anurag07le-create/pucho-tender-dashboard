@@ -1,4 +1,4 @@
-import { X, ExternalLink, FileText, Download, CheckCircle, Info, Landmark, TrendingUp, List } from 'lucide-react';
+import { X, ExternalLink, FileText, Download, CheckCircle, Info, Landmark, TrendingUp, List, Award } from 'lucide-react';
 
 export default function TenderModal({ tender, onClose }: { tender: any, onClose: () => void }) {
     const raw = tender.rawData || {};
@@ -32,7 +32,9 @@ export default function TenderModal({ tender, onClose }: { tender: any, onClose:
             <div className="modal-content" onClick={e => e.stopPropagation()}>
                 <header className="modal-header">
                     <div style={{ flex: 1 }}>
-                        <span className="badge badge-success" style={{ marginBottom: '0.5rem', display: 'inline-block' }}>Open Tender</span>
+                        <span className={`badge ${tender.status?.toLowerCase() === 'open' ? 'badge-success' : tender.status?.toLowerCase() === 'closed' ? 'badge-secondary' : 'badge-warning'}`} style={{ marginBottom: '0.5rem', display: 'inline-block' }}>
+                            {tender.status || 'Open'} Tender
+                        </span>
                         <h2 style={{ fontSize: '1.5rem', fontWeight: 700, lineHeight: 1.2 }}>{raw['Tender title/Name Of Project'] || 'Tender Details'}</h2>
                         <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>ID: #{tender.id} • {tender.organisation}</p>
                     </div>
@@ -156,6 +158,29 @@ export default function TenderModal({ tender, onClose }: { tender: any, onClose:
                             </ul>
                         </div>
                     </div>
+
+                    {tender.eligibilityCriteria?.length > 0 && (
+                        <div style={{ marginTop: '2.5rem' }}>
+                            <h3 style={{ fontSize: '1.1rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                <Award size={18} /> Eligibility Criteria
+                            </h3>
+                            <div style={{ 
+                                background: '#f0fdf4', 
+                                padding: '1.25rem', 
+                                borderRadius: '12px',
+                                border: '1px solid #bbf7d0'
+                            }}>
+                                <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                                    {tender.eligibilityCriteria.map((criteria: any, i: number) => (
+                                        <li key={i} style={{ fontSize: '0.875rem', display: 'flex', alignItems: 'flex-start', gap: '0.75rem', color: '#166534' }}>
+                                            <CheckCircle size={16} style={{ flexShrink: 0, marginTop: '2px' }} />
+                                            <span>{typeof criteria === 'string' ? criteria : criteria.name || JSON.stringify(criteria)}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    )}
 
                     <div style={{ marginTop: '2.5rem', borderTop: '1px solid var(--border)', paddingTop: '1.5rem' }}>
                         <h3 style={{ fontSize: '1rem', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>

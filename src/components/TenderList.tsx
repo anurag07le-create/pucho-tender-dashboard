@@ -7,10 +7,12 @@ export default function TenderList({ tenders, onSelect }: { tenders: any[], onSe
     const [search, setSearch] = useState('');
     const [selectedDept, setSelectedDept] = useState('All Departments');
     const [selectedPlace, setSelectedPlace] = useState('All Places');
+    const [selectedStatus, setSelectedStatus] = useState('All Status');
     const [minValue, setMinValue] = useState<string>('');
     const [maxValue, setMaxValue] = useState<string>('');
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const [isPlaceFilterOpen, setIsPlaceFilterOpen] = useState(false);
+    const [isStatusFilterOpen, setIsStatusFilterOpen] = useState(false);
 
     // Get unique departments for the filter
     const departments = useMemo(() => {
@@ -22,6 +24,12 @@ export default function TenderList({ tenders, onSelect }: { tenders: any[], onSe
     const places = useMemo(() => {
         const locs = new Set(tenders.map(t => t.rawData?.["Location"]).filter(Boolean));
         return ['All Places', ...Array.from(locs).sort()];
+    }, [tenders]);
+
+    // Get unique statuses
+    const statuses = useMemo(() => {
+        const stats = new Set(tenders.map(t => t.status).filter(Boolean));
+        return ['All Status', ...Array.from(stats).sort()];
     }, [tenders]);
 
     const filtered = useMemo(() => {
@@ -39,15 +47,16 @@ export default function TenderList({ tenders, onSelect }: { tenders: any[], onSe
             
             const matchesDept = selectedDept === 'All Departments' || t.department === selectedDept;
             const matchesPlace = selectedPlace === 'All Places' || t.rawData?.["Location"] === selectedPlace;
+            const matchesStatus = selectedStatus === 'All Status' || t.status === selectedStatus;
             
             // Numeric value filtering
-            const costValue = parseFloat(t.estimatedCost.replace(/[^\d.]/g, '')) || 0;
+            const costValue = parseFloat(t.estimatedCost?.replace(/[^\d.]/g, '') || '0') || 0;
             const matchesMin = !minValue || costValue >= parseFloat(minValue);
             const matchesMax = !maxValue || costValue <= parseFloat(maxValue);
             
-            return matchesSearch && matchesDept && matchesPlace && matchesMin && matchesMax;
+            return matchesSearch && matchesDept && matchesPlace && matchesStatus && matchesMin && matchesMax;
         });
-    }, [tenders, search, selectedDept, selectedPlace, minValue, maxValue]);
+    }, [tenders, search, selectedDept, selectedPlace, selectedStatus, minValue, maxValue]);
 
     return (
         <div style={{ padding: '0 1.5rem 1.5rem' }}>
@@ -137,6 +146,42 @@ export default function TenderList({ tenders, onSelect }: { tenders: any[], onSe
                     )}
                 </div>
 
+                {/* Status Filter */}
+                <div style={{ position: 'relative' }}>
+                    <button 
+                        className="filter-btn" 
+                        onClick={() => { setIsStatusFilterOpen(!isStatusFilterOpen); setIsFilterOpen(false); setIsPlaceFilterOpen(false); }}
+                        style={{ 
+                            background: selectedStatus !== 'All Status' ? 'var(--primary-light)' : 'transparent',
+                            width: '150px',
+                            justifyContent: 'space-between'
+                        }}
+                    >
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                            <Filter size={16} />
+                            <span>{selectedStatus === 'All Status' ? 'Status' : selectedStatus}</span>
+                        </div>
+                        <ChevronDown size={14} style={{ transform: isStatusFilterOpen ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }} />
+                    </button>
+                    
+                    {isStatusFilterOpen && (
+                        <div className="filter-dropdown" style={{ zIndex: 200, left: 0, right: 'auto' }}>
+                            {statuses.map(status => (
+                                <div 
+                                    key={status} 
+                                    className={`filter-item ${selectedStatus === status ? 'active' : ''}`}
+                                    onClick={() => {
+                                        setSelectedStatus(status);
+                                        setIsStatusFilterOpen(false);
+                                    }}
+                                >
+                                    {status}
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
+
                 {/* Value Range Filter */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: '#f8fafc', padding: '0.5rem 1rem', borderRadius: '8px', border: '1px solid var(--border)' }}>
                     <span style={{ fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-muted)' }}>VALUE INR:</span>
@@ -164,6 +209,7 @@ export default function TenderList({ tenders, onSelect }: { tenders: any[], onSe
                         setSearch('');
                         setSelectedDept('All Departments');
                         setSelectedPlace('All Places');
+                        setSelectedStatus('All Status');
                         setMinValue('');
                         setMaxValue('');
                     }}
@@ -180,6 +226,7 @@ export default function TenderList({ tenders, onSelect }: { tenders: any[], onSe
                             <th style={{ width: '120px' }}>Tender ID</th>
                             <th>Tender Name</th>
                             <th>Organisation</th>
+                            <th>Status</th>
                             <th>Due Date</th>
                             <th>Value</th>
                             <th style={{ textAlign: 'right' }}>Action</th>
@@ -188,7 +235,7 @@ export default function TenderList({ tenders, onSelect }: { tenders: any[], onSe
                     <tbody>
                         {filtered.length === 0 ? (
                             <tr>
-                                <td colSpan={6} style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-muted)' }}>
+                                <td colSpan={7} style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-muted)' }}>
                                     No tenders found matching your criteria.
                                 </td>
                             </tr>
@@ -198,7 +245,7 @@ export default function TenderList({ tenders, onSelect }: { tenders: any[], onSe
                                     <td style={{ fontWeight: 600 }}>#{tender.id}</td>
                                     <td>
                                         <div style={{ 
-                                            maxWidth: '300px', 
+                                            maxWidth: '280px', 
                                             overflow: 'hidden', 
                                             textOverflow: 'ellipsis', 
                                             whiteSpace: 'nowrap',
@@ -208,6 +255,11 @@ export default function TenderList({ tenders, onSelect }: { tenders: any[], onSe
                                         </div>
                                     </td>
                                     <td>{tender.organisation}</td>
+                                    <td>
+                                        <span className={`badge ${tender.status?.toLowerCase() === 'open' ? 'badge-success' : tender.status?.toLowerCase() === 'closed' ? 'badge-secondary' : 'badge-warning'}`}>
+                                            {tender.status || 'Open'}
+                                        </span>
+                                    </td>
                                     <td>
                                         <span className="badge badge-secondary">
                                             {tender.submissionDate?.split(' ')[0]}

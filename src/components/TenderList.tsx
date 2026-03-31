@@ -247,7 +247,7 @@ export default function TenderList({ tenders, onSelect }: TenderListProps) {
                 </div>
             </div>
 
-            {/* Table */}
+            {/* Table - Desktop */}
             <div className="tender-table-wrapper">
                 <table className="tender-table">
                     <thead>
@@ -323,6 +323,53 @@ export default function TenderList({ tenders, onSelect }: TenderListProps) {
                         )}
                     </tbody>
                 </table>
+            </div>
+
+            {/* Mobile Card View */}
+            <div className="mobile-tender-cards">
+                {filtered.length === 0 ? (
+                    <div className="empty-state">No tenders found matching your criteria.</div>
+                ) : (
+                    filtered.map((tender, index) => (
+                        <div key={`${tender.id}-${index}`} className="tender-card">
+                            <div className="tender-card-header">
+                                <span className="tender-card-id">#{tender.id}</span>
+                                <span className={`tender-card-status ${tender.status?.toLowerCase() === 'open' ? 'open' : 'pending'}`}>
+                                    {tender.status || 'Open'}
+                                </span>
+                            </div>
+                            <div className="tender-card-title">
+                                {tender.rawData?.['Description of Material/Name of Work'] || tender.name || 'Untitled Tender'}
+                            </div>
+                            <div className="tender-card-org">{tender.organisation}</div>
+                            <div className="tender-card-details">
+                                <div className="tender-card-detail-item">
+                                    <span className="tender-card-detail-label">Due Date</span>
+                                    <span className="tender-card-detail-value">{tender.submissionDate?.split(' ')[0] || 'N/A'}</span>
+                                </div>
+                                <div className="tender-card-detail-item">
+                                    <span className="tender-card-detail-label">Value</span>
+                                    <span className="tender-card-detail-value">
+                                        {formatEstimatedCost(tender.estimatedCost).value} {formatEstimatedCost(tender.estimatedCost).suffix}
+                                    </span>
+                                </div>
+                                <div className="tender-card-detail-item">
+                                    <span className="tender-card-detail-label">Department</span>
+                                    <span className="tender-card-detail-value">{tender.department || 'N/A'}</span>
+                                </div>
+                                <div className="tender-card-detail-item">
+                                    <span className="tender-card-detail-label">Place</span>
+                                    <span className="tender-card-detail-value">{tender.rawData?.Location || 'N/A'}</span>
+                                </div>
+                            </div>
+                            <div className="tender-card-footer">
+                                <button className="tender-card-view-btn" onClick={() => onSelect(tender)}>
+                                    <Eye size={14} /> View Details
+                                </button>
+                            </div>
+                        </div>
+                    ))
+                )}
             </div>
         </div>
     );

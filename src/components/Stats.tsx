@@ -1,6 +1,5 @@
-import { Users, FileText, Landmark, TrendingUp, Award } from 'lucide-react';
+import { Users, FileText, Landmark, TrendingUp, Clock } from 'lucide-react';
 
-// Format number in Indian system
 const formatIndianNumber = (num: number) => {
     const intPart = Math.floor(num);
     const intStr = intPart.toString();
@@ -45,43 +44,52 @@ export default function Stats({ stats }: { stats: any }) {
             label: 'Total Tenders',
             value: stats.totalTenders,
             icon: <FileText size={18} />,
-            color: '#4f46e5',
-            bgColor: '#eef2ff'
+            color: '#1e40af',
+            bgColor: 'rgba(30, 64, 175, 0.12)'
         },
         {
             label: 'Total Value',
             value: formatValue(stats.totalValue),
             icon: <TrendingUp size={18} />,
-            color: '#10b981',
-            bgColor: '#d1fae5'
+            color: '#059669',
+            bgColor: 'rgba(5, 150, 105, 0.12)'
+        },
+        {
+            label: 'Pending Approval',
+            value: stats.pendingCount || 0,
+            icon: <Clock size={18} />,
+            color: '#d97706',
+            bgColor: 'rgba(217, 119, 6, 0.12)',
+            highlight: true
         },
         {
             label: 'Departments',
             value: stats.departments,
             icon: <Landmark size={18} />,
-            color: '#f59e0b',
-            bgColor: '#fef3c7'
+            color: '#7c3aed',
+            bgColor: 'rgba(124, 58, 237, 0.12)'
         },
         {
             label: 'Organisations',
             value: stats.organisations,
             icon: <Users size={18} />,
-            color: '#8b5cf6',
-            bgColor: '#ede9fe'
-        },
-        {
-            label: 'With Eligibility',
-            value: stats.withEligibility || stats.totalTenders,
-            icon: <Award size={18} />,
-            color: '#ec4899',
-            bgColor: '#fce7f3'
+            color: '#db2777',
+            bgColor: 'rgba(219, 39, 119, 0.12)'
         }
     ];
 
     return (
         <div className="stats-grid">
             {statItems.map((item, index) => (
-                <div key={index} className="stat-card">
+                <div 
+                    key={index} 
+                    className={`stat-card ${item.highlight ? 'highlight' : ''}`}
+                    style={{ 
+                        '--stat-color': item.color, 
+                        '--stat-color-light': item.color,
+                        '--stat-bg': item.bgColor 
+                    } as React.CSSProperties}
+                >
                     <div className="stat-header">
                         <span className="stat-label">{item.label}</span>
                         <div 
@@ -95,10 +103,6 @@ export default function Stats({ stats }: { stats: any }) {
                         </div>
                     </div>
                     <div className="stat-value">{item.value}</div>
-                    <div className="stat-change positive">
-                        <span>↑ 12.5%</span>
-                        <span style={{ color: 'var(--text-muted)' }}>from last month</span>
-                    </div>
                 </div>
             ))}
         </div>

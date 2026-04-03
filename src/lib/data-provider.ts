@@ -3,24 +3,115 @@ const CSV_URL = 'https://docs.google.com/spreadsheets/d/17ozRDo5_2RCR0P2DPEb_bVK
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
+function isValidValue(value: any): boolean {
+    if (value === null || value === undefined) return false;
+    if (value === 'Field Not Found' || value === 'Field Not Found.') return false;
+    if (typeof value === 'string' && value.trim() === '') return false;
+    if (Array.isArray(value) && value.length === 0) return false;
+    return true;
+}
+
+function mergeAllJsonSources(data: any): any {
+    const jsonKeys = Object.keys(data)
+        .filter(k => k.startsWith('json_data_'))
+        .sort();
+    
+    if (jsonKeys.length === 0) return data;
+    
+    const merged: any = {};
+    
+    for (const key of jsonKeys) {
+        const source = data[key];
+        if (!source || typeof source !== 'object') continue;
+        
+        for (const sectionKey of Object.keys(source)) {
+            const section = source[sectionKey];
+            
+            if (!section || typeof section !== 'object') continue;
+            
+            if (!merged[sectionKey]) {
+                merged[sectionKey] = {};
+            }
+            
+            for (const fieldKey of Object.keys(section)) {
+                const value = section[fieldKey];
+                
+                // Skip invalid values
+                if (!isValidValue(value)) continue;
+                
+                // Handle nested objects (like work_completion_requirement)
+                if (typeof value === 'object' && !Array.isArray(value)) {
+                    if (!merged[sectionKey][fieldKey]) {
+                        merged[sectionKey][fieldKey] = {};
+                    }
+                    for (const subKey of Object.keys(value)) {
+                        const subValue = value[subKey];
+                        if (isValidValue(subValue)) {
+                            // Merge all valid nested values
+                            merged[sectionKey][fieldKey][subKey] = subValue;
+                        }
+                    }
+                } else if (Array.isArray(value)) {
+                    // Concatenate arrays from all sources
+                    if (!merged[sectionKey][fieldKey]) {
+                        merged[sectionKey][fieldKey] = [];
+                    }
+                    merged[sectionKey][fieldKey] = [...merged[sectionKey][fieldKey], ...value];
+                } else {
+                    // For simple values, collect all unique valid values
+                    if (!merged[sectionKey][fieldKey]) {
+                        merged[sectionKey][fieldKey] = value;
+                    } else if (merged[sectionKey][fieldKey] !== value) {
+                        // If different valid values exist, keep both (as array)
+                        if (!Array.isArray(merged[sectionKey][fieldKey])) {
+                            merged[sectionKey][fieldKey] = [merged[sectionKey][fieldKey]];
+                        }
+                        if (!merged[sectionKey][fieldKey].includes(value)) {
+                            merged[sectionKey][fieldKey].push(value);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    return Object.keys(merged).length > 0 ? merged : data;
+}
+
 function formatEligibilityCriteria(data: any): any[] {
     const sections: any[] = [];
     
-    // Handle json_data_1 structure
-    const source = data.json_data_1 || data;
+    // Merge all json_data sources
+    const source = mergeAllJsonSources(data);
+    
+    const formatValue = (val: any): any => {
+        if (Array.isArray(val)) {
+            return val.join(' | ');
+        }
+        return val;
+    };
+    
+    const checkValue = (val: any): boolean => {
+        if (!isValidValue(val)) return false;
+        if (Array.isArray(val)) return val.length > 0;
+        return true;
+    };
     
     // Add Tender Information Section
     if (source.tender_info) {
+        const info = source.tender_info;
         sections.push({
             type: 'section',
             title: 'Tender Information',
             items: [
-                { label: 'Title', value: source.tender_info.title },
-                { label: 'Notice Number', value: source.tender_info.notice_number },
-                { label: 'Estimated Value', value: source.tender_info.estimated_value },
-                { label: 'Completion Period', value: source.tender_info.completion_period },
-                { label: 'Bid Validity', value: source.tender_info.bid_validity }
-            ].filter(item => item.value && item.value !== 'Field Not Found')
+                { label: 'Title', value: formatValue(info.title) },
+                { label: 'Notice Number', value: formatValue(info.notice_number) },
+                { label: 'Estimated Value', value: formatValue(info.estimated_value) },
+                { label: 'Completion Period', value: formatValue(info.completion_period) },
+                { label: 'Bid Validity', value: formatValue(info.bid_validity) },
+                { label: 'Last Date of Submission', value: formatValue(info.last_date_of_submission) },
+                { label: 'Technical Bid Opening', value: formatValue(info.technical_bid_opening_date) }
+            ].filter(item => checkValue(item.value))
         });
     }
     
@@ -29,20 +120,39 @@ function formatEligibilityCriteria(data: any): any[] {
         const tech = source.technical_eligibility;
         const techItems = [];
         
-        if (tech.min_experience_years && tech.min_experience_years !== 'Field Not Found') {
-            techItems.push({ label: 'Minimum Experience', value: tech.min_experience_years });
+        if (checkValue(tech.min_experience_years)) {
+            techItems.push({ label: 'Minimum Experience', value: formatValue(tech.min_experience_years) });
+        }
+        
+        if (checkValue(tech.registration_class_required)) {
+            techItems.push({ label: 'Registration Class Required', value: formatValue(tech.registration_class_required) });
         }
         
         if (tech.work_completion_requirement) {
             const work = tech.work_completion_requirement;
-            if (work.single_work_80_percent) techItems.push({ label: 'Experience Requirement', value: work.single_work_80_percent });
-            if (work.two_works_50_percent) techItems.push({ label: 'Alternative Option', value: work.two_works_50_percent });
-            if (work.three_works_40_percent) techItems.push({ label: 'Alternative Option', value: work.three_works_40_percent });
-            if (work.description_of_similar_work) techItems.push({ label: 'Similar Work Description', value: work.description_of_similar_work });
+            if (checkValue(work.single_work_80_percent)) {
+                techItems.push({ label: 'Single Work (80% Value)', value: formatValue(work.single_work_80_percent) });
+            }
+            if (checkValue(work.two_works_50_percent)) {
+                techItems.push({ label: 'Two Works (50% Value)', value: formatValue(work.two_works_50_percent) });
+            }
+            if (checkValue(work.three_works_40_percent)) {
+                techItems.push({ label: 'Three Works (40% Value)', value: formatValue(work.three_works_40_percent) });
+            }
+            if (checkValue(work.type_of_similar_work_previously_done)) {
+                techItems.push({ label: 'Similar Work Type', value: formatValue(work.type_of_similar_work_previously_done) });
+            }
+            if (checkValue(work.value_or_rate_of_similar_work)) {
+                techItems.push({ label: 'Similar Work Value', value: formatValue(work.value_or_rate_of_similar_work) });
+            }
         }
         
-        if (tech.specific_equipment_manpower && tech.specific_equipment_manpower !== 'Field Not Found') {
-            techItems.push({ label: 'Equipment & Manpower', value: tech.specific_equipment_manpower });
+        if (checkValue(tech.type_of_building)) {
+            techItems.push({ label: 'Type of Building', value: formatValue(tech.type_of_building) });
+        }
+        
+        if (checkValue(tech.specific_equipment_manpower)) {
+            techItems.push({ label: 'Equipment & Manpower', value: formatValue(tech.specific_equipment_manpower) });
         }
         
         if (techItems.length > 0) {
@@ -59,16 +169,20 @@ function formatEligibilityCriteria(data: any): any[] {
         const fin = source.financial_eligibility;
         const finItems = [];
         
-        if (fin.avg_annual_turnover && fin.avg_annual_turnover !== 'Field Not Found') {
-            finItems.push({ label: 'Average Annual Turnover', value: fin.avg_annual_turnover });
+        if (checkValue(fin.avg_annual_turnover)) {
+            finItems.push({ label: 'Average Annual Turnover', value: formatValue(fin.avg_annual_turnover) });
         }
         
-        if (fin.net_worth_requirement && fin.net_worth_requirement !== 'Field Not Found') {
-            finItems.push({ label: 'Net Worth Requirement', value: fin.net_worth_requirement });
+        if (checkValue(fin.solvency_certificate_value)) {
+            finItems.push({ label: 'Solvency Certificate Value', value: formatValue(fin.solvency_certificate_value) });
         }
         
-        if (fin.bank_type_stipulation && fin.bank_type_stipulation !== 'Field Not Found') {
-            finItems.push({ label: 'Bank Type Stipulation', value: fin.bank_type_stipulation });
+        if (checkValue(fin.net_worth_requirement)) {
+            finItems.push({ label: 'Net Worth Requirement', value: formatValue(fin.net_worth_requirement) });
+        }
+        
+        if (checkValue(fin.bank_type_stipulation)) {
+            finItems.push({ label: 'Bank Type Stipulation', value: formatValue(fin.bank_type_stipulation) });
         }
         
         if (finItems.length > 0) {
@@ -85,12 +199,20 @@ function formatEligibilityCriteria(data: any): any[] {
         const costs = source.costs_and_deposits;
         const costItems = [];
         
-        if (costs.tender_document_fee && costs.tender_document_fee !== 'Field Not Found') {
-            costItems.push({ label: 'Tender Document Fee', value: costs.tender_document_fee });
+        if (checkValue(costs.tender_document_fee)) {
+            costItems.push({ label: 'Tender Document Fee', value: formatValue(costs.tender_document_fee) });
         }
         
-        if (costs.emd_amount && costs.emd_amount !== 'Field Not Found') {
-            costItems.push({ label: 'EMD Amount', value: costs.emd_amount });
+        if (checkValue(costs.emd_amount)) {
+            costItems.push({ label: 'EMD Amount', value: formatValue(costs.emd_amount) });
+        }
+        
+        if (costs.emd_exemption_allowed !== undefined) {
+            costItems.push({ label: 'EMD Exemption', value: costs.emd_exemption_allowed ? 'Allowed' : 'Not Allowed' });
+        }
+        
+        if (checkValue(costs.security_deposit_percentage)) {
+            costItems.push({ label: 'Security Deposit', value: formatValue(costs.security_deposit_percentage) });
         }
         
         if (costItems.length > 0) {
@@ -100,6 +222,43 @@ function formatEligibilityCriteria(data: any): any[] {
                 items: costItems
             });
         }
+    }
+    
+    // Add Statutory Compliance Section
+    if (source.statutory_compliance) {
+        const stat = source.statutory_compliance;
+        const statItems = [];
+        
+        if (stat.pan_card && stat.pan_card !== 'not mentioned') {
+            statItems.push({ label: 'PAN Card', value: stat.pan_card === 'required' ? 'Required' : stat.pan_card });
+        }
+        if (stat.gst_reg && stat.gst_reg !== 'not mentioned') {
+            statItems.push({ label: 'GST Registration', value: stat.gst_reg === 'required' ? 'Required' : stat.gst_reg });
+        }
+        if (stat.epf_esic && stat.epf_esic !== 'not mentioned') {
+            statItems.push({ label: 'EPF/ESIC', value: stat.epf_esic === 'required' ? 'Required' : stat.epf_esic });
+        }
+        if (stat.labor_license && stat.labor_license !== 'not mentioned') {
+            statItems.push({ label: 'Labor License', value: stat.labor_license === 'required' ? 'Required' : stat.labor_license });
+        }
+        
+        if (statItems.length > 0) {
+            sections.push({
+                type: 'section',
+                title: 'Statutory Compliance',
+                items: statItems
+            });
+        }
+    }
+    
+    // Add Disqualification Triggers Section (arrays are concatenated, dedupe them)
+    if (source.disqualification_triggers && Array.isArray(source.disqualification_triggers) && source.disqualification_triggers.length > 0) {
+        const uniqueTriggers = [...new Set(source.disqualification_triggers as string[])];
+        sections.push({
+            type: 'disqualification',
+            title: 'Disqualification Triggers',
+            items: uniqueTriggers.map((trigger) => ({ label: '', value: trigger }))
+        });
     }
     
     return sections.length > 0 ? sections : [];
@@ -265,6 +424,7 @@ export async function getTenders() {
             }
             
             if (row[11]) tender.status = row[11];
+            if (row[12]) tender.rateSpreadsheetId = row[12];
             
             results.push(tender);
         }
@@ -299,13 +459,15 @@ export const calculateStats = (tenders: any[]) => {
     const departments = [...new Set(tenders.map(t => t.department))].length;
     const organisations = [...new Set(tenders.map(t => t.organisation))].length;
     const withEligibility = tenders.filter(t => t.eligibilityCriteria?.length > 0).length;
+    const pendingCount = tenders.filter(t => t.status?.toLowerCase() === 'pending').length;
 
     return {
         totalTenders,
         totalValue,
         departments,
         organisations,
-        withEligibility
+        withEligibility,
+        pendingCount
     };
 };
 

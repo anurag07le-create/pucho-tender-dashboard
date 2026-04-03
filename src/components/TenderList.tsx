@@ -1,12 +1,28 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Search, Filter, ChevronDown, Eye } from 'lucide-react';
 
 interface TenderListProps {
     tenders: any[];
     onSelect: (tender: any) => void;
 }
+
+const getStatusBadgeClass = (status: string) => {
+    const s = status?.toLowerCase();
+    if (s === 'open') return 'badge-success';
+    if (s === 'accepted') return 'badge-accepted';
+    if (s === 'rejected') return 'badge-rejected';
+    return 'badge-warning';
+};
+
+const getStatusCardClass = (status: string) => {
+    const s = status?.toLowerCase();
+    if (s === 'open') return 'open';
+    if (s === 'accepted') return 'accepted';
+    if (s === 'rejected') return 'rejected';
+    return 'pending';
+};
 
 // Format number in Indian system (e.g., 2308802.37 -> 23,08,802.37)
 const formatIndianNumber = (num: number) => {
@@ -68,28 +84,63 @@ const formatEstimatedCost = (costStr: string) => {
 };
 
 export default function TenderList({ tenders, onSelect }: TenderListProps) {
+    const [localTenders, setLocalTenders] = useState(tenders);
     const [search, setSearch] = useState('');
     const [deptFilter, setDeptFilter] = useState<string | null>(null);
     const [placeFilter, setPlaceFilter] = useState<string | null>(null);
     const [statusFilter, setStatusFilter] = useState<string | null>(null);
+    const [classFilter, setClassFilter] = useState<string | null>(null);
     const [valueMin, setValueMin] = useState('');
     const [valueMax, setValueMax] = useState('');
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
+    const extractClass = (tender: any): string | null => {
+        const eligibility = tender.eligibilityCriteria || [];
+        const invalidWords = ['OR', 'AND', 'NOT', 'THE', 'FOR', 'CLASS', 'ABOVE', 'BELOW'];
+        for (const section of eligibility) {
+            if (section.items) {
+                for (const item of section.items) {
+                    if (item.label?.toLowerCase().includes('registration class') || item.label?.toLowerCase().includes('class')) {
+                        const value = item.value || '';
+                        const matches = value.match(/\b([A-Za-z][0-9]?-[0-9]+|[A-Za-z][0-9]?)\b/g);
+                        if (matches) {
+                            for (const match of matches) {
+                                const cleanMatch = match.toUpperCase();
+                                if (!invalidWords.includes(cleanMatch) && cleanMatch.length <= 4) {
+                                    return cleanMatch;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return null;
+    };
+
+    const classes = useMemo(() => {
+        const classSet = new Set<string>();
+        tenders.forEach(t => {
+            const cls = extractClass(t);
+            if (cls) classSet.add(cls);
+        });
+        return Array.from(classSet).sort();
+    }, [localTenders]);
+
     const departments = useMemo(() => {
-        const depts = [...new Set(tenders.map(t => t.department))].filter(Boolean);
+        const depts = [...new Set(localTenders.map(t => t.department))].filter(Boolean);
         return depts.sort();
-    }, [tenders]);
+    }, [localTenders]);
 
     const places = useMemo(() => {
-        const locs = [...new Set(tenders.map(t => t.rawData?.Location).filter(Boolean))];
+        const locs = [...new Set(localTenders.map(t => t.rawData?.Location).filter(Boolean))];
         return locs.sort().slice(0, 20);
-    }, [tenders]);
+    }, [localTenders]);
 
-    const statuses = ['Open', 'Pending', 'Closed'];
+    const statuses = ['Open', 'Pending', 'Accepted', 'Rejected'];
 
     const filtered = useMemo(() => {
-        return tenders.filter(t => {
+        return localTenders.filter(t => {
             const searchLower = search.toLowerCase();
             const matchesSearch = !search || 
                 t.id?.toString().toLowerCase().includes(searchLower) ||
@@ -100,6 +151,8 @@ export default function TenderList({ tenders, onSelect }: TenderListProps) {
             const matchesDept = !deptFilter || t.department === deptFilter;
             const matchesPlace = !placeFilter || t.rawData?.Location === placeFilter;
             const matchesStatus = !statusFilter || t.status?.toLowerCase() === statusFilter.toLowerCase();
+            
+            const matchesClass = !classFilter || extractClass(t) === classFilter;
 
             let matchesValue = true;
             if (valueMin || valueMax) {
@@ -109,20 +162,34 @@ export default function TenderList({ tenders, onSelect }: TenderListProps) {
                 if (valueMax && value > parseFloat(valueMax)) matchesValue = false;
             }
 
-            return matchesSearch && matchesDept && matchesPlace && matchesStatus && matchesValue;
+            return matchesSearch && matchesDept && matchesPlace && matchesStatus && matchesClass && matchesValue;
         });
-    }, [tenders, search, deptFilter, placeFilter, statusFilter, valueMin, valueMax]);
+    }, [localTenders, search, deptFilter, placeFilter, statusFilter, classFilter, valueMin, valueMax]);
+
+    useEffect(() => {
+        setLocalTenders(tenders);
+    }, [tenders]);
+
+    useEffect(() => {
+        const handleUpdate = (event: any) => {
+            const updatedTender = event.detail;
+            setLocalTenders(prev => prev.map(t => t.id === updatedTender.id ? updatedTender : t));
+        };
+        window.addEventListener('tender-status-updated', handleUpdate as EventListener);
+        return () => window.removeEventListener('tender-status-updated', handleUpdate as EventListener);
+    }, []);
 
     const clearFilters = () => {
         setSearch('');
         setDeptFilter(null);
         setPlaceFilter(null);
         setStatusFilter(null);
+        setClassFilter(null);
         setValueMin('');
         setValueMax('');
     };
 
-    const hasActiveFilters = search || deptFilter || placeFilter || statusFilter || valueMin || valueMax;
+    const hasActiveFilters = search || deptFilter || placeFilter || statusFilter || classFilter || valueMin || valueMax;
 
     return (
         <div>
@@ -221,6 +288,35 @@ export default function TenderList({ tenders, onSelect }: TenderListProps) {
                         )}
                     </div>
 
+                    {/* Class Filter */}
+                    {classes.length > 0 && (
+                        <div style={{ position: 'relative' }}>
+                            <button 
+                                className="filter-btn"
+                                onClick={() => setOpenDropdown(openDropdown === 'class' ? null : 'class')}
+                            >
+                                <span>{classFilter ? `Class ${classFilter}` : 'Class'}</span>
+                                <ChevronDown size={16} />
+                            </button>
+                            {openDropdown === 'class' && (
+                                <div className="filter-dropdown">
+                                    {classes.map(cls => (
+                                        <div
+                                            key={cls}
+                                            className={`filter-option ${classFilter === cls ? 'selected' : ''}`}
+                                            onClick={() => {
+                                                setClassFilter(classFilter === cls ? null : cls);
+                                                setOpenDropdown(null);
+                                            }}
+                                        >
+                                            Class {cls}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    )}
+
                     {/* Value Filter */}
                     <div className="value-filter">
                         <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 600 }}>Value ₹:</span>
@@ -290,7 +386,7 @@ export default function TenderList({ tenders, onSelect }: TenderListProps) {
                                     </td>
                                     <td>{tender.organisation}</td>
                                     <td>
-                                        <span className={`badge ${tender.status?.toLowerCase() === 'open' ? 'badge-success' : tender.status?.toLowerCase() === 'closed' ? 'badge-secondary' : 'badge-warning'}`}>
+                                        <span className={`badge ${getStatusBadgeClass(tender.status)}`}>
                                             {tender.status || 'Open'}
                                         </span>
                                     </td>
@@ -334,7 +430,7 @@ export default function TenderList({ tenders, onSelect }: TenderListProps) {
                         <div key={`${tender.id}-${index}`} className="tender-card">
                             <div className="tender-card-header">
                                 <span className="tender-card-id">#{tender.id}</span>
-                                <span className={`tender-card-status ${tender.status?.toLowerCase() === 'open' ? 'open' : 'pending'}`}>
+                                <span className={`tender-card-status ${getStatusCardClass(tender.status)}`}>
                                     {tender.status || 'Open'}
                                 </span>
                             </div>
